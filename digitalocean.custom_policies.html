@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module digitalocean.custom_policies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="digitalocean.html"><font color="#ffffff">digitalocean</font></a>.custom_policies</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/custom_policies.py">/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/custom_policies.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="azure.core.pipeline.policies._universal.html#HttpLoggingPolicy">azure.core.pipeline.policies._universal.HttpLoggingPolicy</a>(<a href="azure.core.pipeline.policies._base.html#SansIOHTTPPolicy">azure.core.pipeline.policies._base.SansIOHTTPPolicy</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean.custom_policies.html#CustomHttpLoggingPolicy">CustomHttpLoggingPolicy</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CustomHttpLoggingPolicy">class <strong>CustomHttpLoggingPolicy</strong></a>(<a href="azure.core.pipeline.policies._universal.html#HttpLoggingPolicy">azure.core.pipeline.policies._universal.HttpLoggingPolicy</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#CustomHttpLoggingPolicy">CustomHttpLoggingPolicy</a>(logger=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="digitalocean.custom_policies.html#CustomHttpLoggingPolicy">CustomHttpLoggingPolicy</a></dd>
+<dd><a href="azure.core.pipeline.policies._universal.html#HttpLoggingPolicy">azure.core.pipeline.policies._universal.HttpLoggingPolicy</a></dd>
+<dd><a href="azure.core.pipeline.policies._base.html#SansIOHTTPPolicy">azure.core.pipeline.policies._base.SansIOHTTPPolicy</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CustomHttpLoggingPolicy-__init__"><strong>__init__</strong></a>(self, logger=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>ALLOWED_HEADERS</strong> = {'CF-Cache-Status', 'CF-RAY', 'Content-Encoding', 'Expect-CT', 'Server', 'ratelimit-limit', ...}</dl>
+
+<dl><dt><strong>__parameters__</strong> = ()</dl>
+
+<hr>
+Methods inherited from <a href="azure.core.pipeline.policies._universal.html#HttpLoggingPolicy">azure.core.pipeline.policies._universal.HttpLoggingPolicy</a>:<br>
+<dl><dt><a name="CustomHttpLoggingPolicy-on_request"><strong>on_request</strong></a>(self, request)</dt><dd><tt>Logs&nbsp;HTTP&nbsp;method,&nbsp;url&nbsp;and&nbsp;headers.<br>
+:param&nbsp;request:&nbsp;The&nbsp;PipelineRequest&nbsp;object.<br>
+:type&nbsp;request:&nbsp;~azure.core.pipeline.PipelineRequest</tt></dd></dl>
+
+<dl><dt><a name="CustomHttpLoggingPolicy-on_response"><strong>on_response</strong></a>(self, request, response)</dt><dd><tt>Is&nbsp;executed&nbsp;after&nbsp;the&nbsp;request&nbsp;comes&nbsp;back&nbsp;from&nbsp;the&nbsp;policy.<br>
+&nbsp;<br>
+:param&nbsp;request:&nbsp;Request&nbsp;to&nbsp;be&nbsp;modified&nbsp;after&nbsp;returning&nbsp;from&nbsp;the&nbsp;policy.<br>
+:type&nbsp;request:&nbsp;~azure.core.pipeline.PipelineRequest<br>
+:param&nbsp;response:&nbsp;Pipeline&nbsp;response&nbsp;object<br>
+:type&nbsp;response:&nbsp;~azure.core.pipeline.PipelineResponse</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="azure.core.pipeline.policies._universal.html#HttpLoggingPolicy">azure.core.pipeline.policies._universal.HttpLoggingPolicy</a>:<br>
+<dl><dt><strong>DEFAULT_HEADERS_WHITELIST</strong> = {'Accept', 'Cache-Control', 'Connection', 'Content-Length', 'Content-Type', 'Date', ...}</dl>
+
+<dl><dt><strong>MULTI_RECORD_LOG</strong> = 'AZURE_SDK_LOGGING_MULTIRECORD'</dl>
+
+<dl><dt><strong>REDACTED_PLACEHOLDER</strong> = 'REDACTED'</dl>
+
+<hr>
+Methods inherited from <a href="azure.core.pipeline.policies._base.html#SansIOHTTPPolicy">azure.core.pipeline.policies._base.SansIOHTTPPolicy</a>:<br>
+<dl><dt><a name="CustomHttpLoggingPolicy-on_exception"><strong>on_exception</strong></a>(self, request)</dt><dd><tt>Is&nbsp;executed&nbsp;if&nbsp;an&nbsp;exception&nbsp;is&nbsp;raised&nbsp;while&nbsp;executing&nbsp;the&nbsp;next&nbsp;policy.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;executed&nbsp;inside&nbsp;the&nbsp;exception&nbsp;handler.<br>
+&nbsp;<br>
+:param&nbsp;request:&nbsp;The&nbsp;Pipeline&nbsp;request&nbsp;object<br>
+:type&nbsp;request:&nbsp;~azure.core.pipeline.PipelineRequest<br>
+&nbsp;<br>
+..&nbsp;admonition::&nbsp;Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;literalinclude::&nbsp;../samples/test_example_sansio.py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:start-after:&nbsp;[START&nbsp;on_exception]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:end-before:&nbsp;[END&nbsp;on_exception]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:language:&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:dedent:&nbsp;4</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="azure.core.pipeline.policies._base.html#SansIOHTTPPolicy">azure.core.pipeline.policies._base.SansIOHTTPPolicy</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="azure.core.pipeline.policies._base.html#SansIOHTTPPolicy">azure.core.pipeline.policies._base.SansIOHTTPPolicy</a>:<br>
+<dl><dt><strong>__orig_bases__</strong> = (typing.Generic[~HTTPRequestType, ~HTTPResponseType],)</dl>
+
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="CustomHttpLoggingPolicy-__class_getitem__"><strong>__class_getitem__</strong></a>(params)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<dl><dt><a name="CustomHttpLoggingPolicy-__init_subclass__"><strong>__init_subclass__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;class&nbsp;is&nbsp;subclassed.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;does&nbsp;nothing.&nbsp;It&nbsp;may&nbsp;be<br>
+overridden&nbsp;to&nbsp;extend&nbsp;subclasses.</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

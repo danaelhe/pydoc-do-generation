@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module digitalocean._serialization</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="digitalocean.html"><font color="#ffffff">digitalocean</font></a>._serialization</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/_serialization.py">/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/_serialization.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;--------------------------------------------------------------------------<br>
+#<br>
+#&nbsp;Copyright&nbsp;(c)&nbsp;Microsoft&nbsp;Corporation.&nbsp;All&nbsp;rights&nbsp;reserved.<br>
+#<br>
+#&nbsp;The&nbsp;MIT&nbsp;License&nbsp;(MIT)<br>
+#<br>
+#&nbsp;Permission&nbsp;is&nbsp;hereby&nbsp;granted,&nbsp;free&nbsp;of&nbsp;charge,&nbsp;to&nbsp;any&nbsp;person&nbsp;obtaining&nbsp;a&nbsp;copy<br>
+#&nbsp;of&nbsp;this&nbsp;software&nbsp;and&nbsp;associated&nbsp;documentation&nbsp;files&nbsp;(the&nbsp;""Software""),&nbsp;to<br>
+#&nbsp;deal&nbsp;in&nbsp;the&nbsp;Software&nbsp;without&nbsp;restriction,&nbsp;including&nbsp;without&nbsp;limitation&nbsp;the<br>
+#&nbsp;rights&nbsp;to&nbsp;use,&nbsp;copy,&nbsp;modify,&nbsp;merge,&nbsp;publish,&nbsp;distribute,&nbsp;sublicense,&nbsp;and/or<br>
+#&nbsp;sell&nbsp;copies&nbsp;of&nbsp;the&nbsp;Software,&nbsp;and&nbsp;to&nbsp;permit&nbsp;persons&nbsp;to&nbsp;whom&nbsp;the&nbsp;Software&nbsp;is<br>
+#&nbsp;furnished&nbsp;to&nbsp;do&nbsp;so,&nbsp;subject&nbsp;to&nbsp;the&nbsp;following&nbsp;conditions:<br>
+#<br>
+#&nbsp;The&nbsp;above&nbsp;copyright&nbsp;notice&nbsp;and&nbsp;this&nbsp;permission&nbsp;notice&nbsp;shall&nbsp;be&nbsp;included&nbsp;in<br>
+#&nbsp;all&nbsp;copies&nbsp;or&nbsp;substantial&nbsp;portions&nbsp;of&nbsp;the&nbsp;Software.<br>
+#<br>
+#&nbsp;THE&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;*AS&nbsp;IS*,&nbsp;WITHOUT&nbsp;WARRANTY&nbsp;OF&nbsp;ANY&nbsp;KIND,&nbsp;EXPRESS&nbsp;OR<br>
+#&nbsp;IMPLIED,&nbsp;INCLUDING&nbsp;BUT&nbsp;NOT&nbsp;LIMITED&nbsp;TO&nbsp;THE&nbsp;WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY,<br>
+#&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE&nbsp;AND&nbsp;NONINFRINGEMENT.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE<br>
+#&nbsp;AUTHORS&nbsp;OR&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;BE&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;CLAIM,&nbsp;DAMAGES&nbsp;OR&nbsp;OTHER<br>
+#&nbsp;LIABILITY,&nbsp;WHETHER&nbsp;IN&nbsp;AN&nbsp;ACTION&nbsp;OF&nbsp;CONTRACT,&nbsp;TORT&nbsp;OR&nbsp;OTHERWISE,&nbsp;ARISING<br>
+#&nbsp;FROM,&nbsp;OUT&nbsp;OF&nbsp;OR&nbsp;IN&nbsp;CONNECTION&nbsp;WITH&nbsp;THE&nbsp;SOFTWARE&nbsp;OR&nbsp;THE&nbsp;USE&nbsp;OR&nbsp;OTHER&nbsp;DEALINGS<br>
+#&nbsp;IN&nbsp;THE&nbsp;SOFTWARE.<br>
+#<br>
+#&nbsp;--------------------------------------------------------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+<a href="calendar.html">calendar</a><br>
+<a href="codecs.html">codecs</a><br>
+</td><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="decimal.html">decimal</a><br>
+<a href="email.html">email</a><br>
+</td><td width="25%" valign=top><a href="isodate.html">isodate</a><br>
+<a href="json.html">json</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._serialization.html#Deserializer">Deserializer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="digitalocean._serialization.html#Model">Model</a>
+</font></dt><dt><font face="helvetica, arial"><a href="digitalocean._serialization.html#RawDeserializer">RawDeserializer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="digitalocean._serialization.html#Serializer">Serializer</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="datetime.html#tzinfo">datetime.tzinfo</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._serialization.html#UTC">UTC</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Deserializer">class <strong>Deserializer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Deserializer">Deserializer</a>(classes=None)<br>
+&nbsp;<br>
+Response&nbsp;<a href="builtins.html#object">object</a>&nbsp;model&nbsp;deserializer.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;classes:&nbsp;Class&nbsp;type&nbsp;dictionary&nbsp;for&nbsp;deserializing&nbsp;complex&nbsp;types.<br>
+:ivar&nbsp;list&nbsp;key_extractors:&nbsp;Ordered&nbsp;list&nbsp;of&nbsp;extractors&nbsp;to&nbsp;be&nbsp;used&nbsp;by&nbsp;this&nbsp;deserializer.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Deserializer-__call__"><strong>__call__</strong></a>(self, target_obj, response_data, content_type=None)</dt><dd><tt>Call&nbsp;the&nbsp;deserializer&nbsp;to&nbsp;process&nbsp;a&nbsp;REST&nbsp;response.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;target_obj:&nbsp;Target&nbsp;data&nbsp;type&nbsp;to&nbsp;deserialize&nbsp;to.<br>
+:param&nbsp;requests.Response&nbsp;response_data:&nbsp;REST&nbsp;response&nbsp;<a href="builtins.html#object">object</a>.<br>
+:param&nbsp;str&nbsp;content_type:&nbsp;Swagger&nbsp;"produces"&nbsp;if&nbsp;available.<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;deserialization&nbsp;fails.<br>
+:return:&nbsp;Deserialized&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-__init__"><strong>__init__</strong></a>(self, classes=None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_basic"><strong>deserialize_basic</strong></a>(self, attr, data_type)</dt><dd><tt>Deserialize&nbsp;basic&nbsp;builtin&nbsp;data&nbsp;type&nbsp;from&nbsp;string.<br>
+Will&nbsp;attempt&nbsp;to&nbsp;convert&nbsp;to&nbsp;str,&nbsp;int,&nbsp;float&nbsp;and&nbsp;bool.<br>
+This&nbsp;function&nbsp;will&nbsp;also&nbsp;accept&nbsp;'1',&nbsp;'0',&nbsp;'true'&nbsp;and&nbsp;'false'&nbsp;as<br>
+valid&nbsp;bool&nbsp;values.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;deserialization&nbsp;data&nbsp;type.<br>
+:rtype:&nbsp;str,&nbsp;int,&nbsp;float&nbsp;or&nbsp;bool<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;string&nbsp;format&nbsp;is&nbsp;not&nbsp;valid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_data"><strong>deserialize_data</strong></a>(self, data, data_type)</dt><dd><tt>Process&nbsp;data&nbsp;for&nbsp;deserialization&nbsp;according&nbsp;to&nbsp;data&nbsp;type.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;data:&nbsp;The&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;deserialize&nbsp;to.<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;deserialization&nbsp;fails.<br>
+:return:&nbsp;Deserialized&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_dict"><strong>deserialize_dict</strong></a>(self, attr, dict_type)</dt><dd><tt>Deserialize&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+:param&nbsp;dict/list&nbsp;attr:&nbsp;Dictionary&nbsp;to&nbsp;be&nbsp;deserialized.&nbsp;Also&nbsp;accepts<br>
+&nbsp;a&nbsp;list&nbsp;of&nbsp;key,&nbsp;value&nbsp;pairs.<br>
+:param&nbsp;str&nbsp;dict_type:&nbsp;The&nbsp;<a href="builtins.html#object">object</a>&nbsp;type&nbsp;of&nbsp;the&nbsp;items&nbsp;in&nbsp;the&nbsp;dictionary.<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_iter"><strong>deserialize_iter</strong></a>(self, attr, iter_type)</dt><dd><tt>Deserialize&nbsp;an&nbsp;iterable.<br>
+&nbsp;<br>
+:param&nbsp;list&nbsp;attr:&nbsp;Iterable&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:param&nbsp;str&nbsp;iter_type:&nbsp;The&nbsp;type&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;the&nbsp;iterable.<br>
+:rtype:&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_object"><strong>deserialize_object</strong></a>(self, attr, **kwargs)</dt><dd><tt>Deserialize&nbsp;a&nbsp;generic&nbsp;<a href="builtins.html#object">object</a>.<br>
+This&nbsp;will&nbsp;be&nbsp;handled&nbsp;as&nbsp;a&nbsp;dictionary.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;attr:&nbsp;Dictionary&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;dict<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;non-builtin&nbsp;datatype&nbsp;encountered.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-failsafe_deserialize"><strong>failsafe_deserialize</strong></a>(self, target_obj, data, content_type=None)</dt><dd><tt>Ignores&nbsp;any&nbsp;errors&nbsp;encountered&nbsp;in&nbsp;deserialization,<br>
+and&nbsp;falls&nbsp;back&nbsp;to&nbsp;not&nbsp;deserializing&nbsp;the&nbsp;<a href="builtins.html#object">object</a>.&nbsp;Recommended<br>
+for&nbsp;use&nbsp;in&nbsp;error&nbsp;deserialization,&nbsp;as&nbsp;we&nbsp;want&nbsp;to&nbsp;return&nbsp;the<br>
+HttpResponseError&nbsp;to&nbsp;users,&nbsp;and&nbsp;not&nbsp;have&nbsp;them&nbsp;deal&nbsp;with<br>
+a&nbsp;deserialization&nbsp;error.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;target_obj:&nbsp;The&nbsp;target&nbsp;<a href="builtins.html#object">object</a>&nbsp;type&nbsp;to&nbsp;deserialize&nbsp;to.<br>
+:param&nbsp;str/dict&nbsp;data:&nbsp;The&nbsp;response&nbsp;data&nbsp;to&nbsp;deseralize.<br>
+:param&nbsp;str&nbsp;content_type:&nbsp;Swagger&nbsp;"produces"&nbsp;if&nbsp;available.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Deserializer-deserialize_base64"><strong>deserialize_base64</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;base64&nbsp;encoded&nbsp;string&nbsp;into&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;bytearray<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_bytearray"><strong>deserialize_bytearray</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;string&nbsp;into&nbsp;bytearray.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;bytearray<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_date"><strong>deserialize_date</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;ISO-8601&nbsp;formatted&nbsp;string&nbsp;into&nbsp;Date&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;Date<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_decimal"><strong>deserialize_decimal</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;string&nbsp;into&nbsp;Decimal&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;Decimal<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_duration"><strong>deserialize_duration</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;ISO-8601&nbsp;formatted&nbsp;string&nbsp;into&nbsp;TimeDelta&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;TimeDelta<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_enum"><strong>deserialize_enum</strong></a>(data, enum_obj)</dt><dd><tt>Deserialize&nbsp;string&nbsp;into&nbsp;enum&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;string&nbsp;is&nbsp;not&nbsp;a&nbsp;valid&nbsp;enum&nbsp;value&nbsp;it&nbsp;will&nbsp;be&nbsp;returned&nbsp;as-is<br>
+and&nbsp;a&nbsp;warning&nbsp;will&nbsp;be&nbsp;logged.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;data:&nbsp;Response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.&nbsp;If&nbsp;this&nbsp;value&nbsp;is<br>
+&nbsp;None&nbsp;or&nbsp;invalid&nbsp;it&nbsp;will&nbsp;be&nbsp;returned&nbsp;as-is.<br>
+:param&nbsp;Enum&nbsp;enum_obj:&nbsp;Enum&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;deserialize&nbsp;to.<br>
+:rtype:&nbsp;Enum</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_iso"><strong>deserialize_iso</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;ISO-8601&nbsp;formatted&nbsp;string&nbsp;into&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;Datetime<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_long"><strong>deserialize_long</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;string&nbsp;into&nbsp;long&nbsp;(Py2)&nbsp;or&nbsp;int&nbsp;(Py3).<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;long&nbsp;or&nbsp;int<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_rfc"><strong>deserialize_rfc</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;<a href="http://www.rfc-editor.org/rfc/rfc1123.txt">RFC-1123</a>&nbsp;formatted&nbsp;string&nbsp;into&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;Datetime<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_time"><strong>deserialize_time</strong></a>(attr)</dt><dd><tt>Deserialize&nbsp;ISO-8601&nbsp;formatted&nbsp;string&nbsp;into&nbsp;time&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;attr:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;datetime.time<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;string&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_unicode"><strong>deserialize_unicode</strong></a>(data)</dt><dd><tt>Preserve&nbsp;unicode&nbsp;objects&nbsp;in&nbsp;Python&nbsp;2,&nbsp;otherwise&nbsp;return&nbsp;data<br>
+as&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;data:&nbsp;response&nbsp;string&nbsp;to&nbsp;be&nbsp;deserialized.<br>
+:rtype:&nbsp;str&nbsp;or&nbsp;unicode</tt></dd></dl>
+
+<dl><dt><a name="Deserializer-deserialize_unix"><strong>deserialize_unix</strong></a>(attr)</dt><dd><tt>Serialize&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;IntTime&nbsp;format.<br>
+This&nbsp;is&nbsp;represented&nbsp;as&nbsp;seconds.<br>
+&nbsp;<br>
+:param&nbsp;int&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;Datetime<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;format&nbsp;invalid</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>basic_types</strong> = {&lt;class 'str'&gt;: 'str', &lt;class 'int'&gt;: 'int', &lt;class 'bool'&gt;: 'bool', &lt;class 'float'&gt;: 'float'}</dl>
+
+<dl><dt><strong>valid_date</strong> = re.compile('\\d{4}[-]\\d{2}[-]\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.?\\d*Z?[-+]?[\\d{2}]?:?[\\d{2}]?')</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Model">class <strong>Model</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Model">Model</a>(**kwargs)<br>
+&nbsp;<br>
+Mixin&nbsp;for&nbsp;all&nbsp;client&nbsp;request&nbsp;body/response&nbsp;body&nbsp;models&nbsp;to&nbsp;support<br>
+serialization&nbsp;and&nbsp;deserialization.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Model-__eq__"><strong>__eq__</strong></a>(self, other)</dt><dd><tt>Compare&nbsp;objects&nbsp;by&nbsp;comparing&nbsp;all&nbsp;attributes.</tt></dd></dl>
+
+<dl><dt><a name="Model-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Model-__ne__"><strong>__ne__</strong></a>(self, other)</dt><dd><tt>Compare&nbsp;objects&nbsp;by&nbsp;comparing&nbsp;all&nbsp;attributes.</tt></dd></dl>
+
+<dl><dt><a name="Model-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Model-as_dict"><strong>as_dict</strong></a>(self, keep_readonly=True, key_transformer=&lt;function attribute_transformer at 0x10c5484c0&gt;, **kwargs)</dt><dd><tt>Return&nbsp;a&nbsp;dict&nbsp;that&nbsp;can&nbsp;be&nbsp;JSONify&nbsp;using&nbsp;json.dump.<br>
+&nbsp;<br>
+Advanced&nbsp;usage&nbsp;might&nbsp;optionally&nbsp;use&nbsp;a&nbsp;callback&nbsp;as&nbsp;parameter:<br>
+&nbsp;<br>
+..&nbsp;code::python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;my_key_transformer(key,&nbsp;attr_desc,&nbsp;value):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;key<br>
+&nbsp;<br>
+Key&nbsp;is&nbsp;the&nbsp;attribute&nbsp;name&nbsp;used&nbsp;in&nbsp;Python.&nbsp;Attr_desc<br>
+is&nbsp;a&nbsp;dict&nbsp;of&nbsp;metadata.&nbsp;Currently&nbsp;contains&nbsp;'type'&nbsp;with&nbsp;the<br>
+msrest&nbsp;type&nbsp;and&nbsp;'key'&nbsp;with&nbsp;the&nbsp;RestAPI&nbsp;encoded&nbsp;key.<br>
+Value&nbsp;is&nbsp;the&nbsp;current&nbsp;value&nbsp;in&nbsp;this&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+The&nbsp;string&nbsp;returned&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;serialize&nbsp;the&nbsp;key.<br>
+If&nbsp;the&nbsp;return&nbsp;type&nbsp;is&nbsp;a&nbsp;list,&nbsp;this&nbsp;is&nbsp;considered&nbsp;hierarchical<br>
+result&nbsp;dict.<br>
+&nbsp;<br>
+See&nbsp;the&nbsp;three&nbsp;examples&nbsp;in&nbsp;this&nbsp;file:<br>
+&nbsp;<br>
+-&nbsp;attribute_transformer<br>
+-&nbsp;full_restapi_key_transformer<br>
+-&nbsp;last_restapi_key_transformer<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;want&nbsp;XML&nbsp;serialization,&nbsp;you&nbsp;can&nbsp;pass&nbsp;the&nbsp;kwargs&nbsp;is_xml=True.<br>
+&nbsp;<br>
+:param&nbsp;function&nbsp;key_transformer:&nbsp;A&nbsp;key&nbsp;transformer&nbsp;function.<br>
+:returns:&nbsp;A&nbsp;dict&nbsp;JSON&nbsp;compatible&nbsp;<a href="builtins.html#object">object</a><br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Model-serialize"><strong>serialize</strong></a>(self, keep_readonly=False, **kwargs)</dt><dd><tt>Return&nbsp;the&nbsp;JSON&nbsp;that&nbsp;would&nbsp;be&nbsp;sent&nbsp;to&nbsp;azure&nbsp;from&nbsp;this&nbsp;model.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;an&nbsp;alias&nbsp;to&nbsp;`<a href="#Model-as_dict">as_dict</a>(full_restapi_key_transformer,&nbsp;keep_readonly=False)`.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;want&nbsp;XML&nbsp;serialization,&nbsp;you&nbsp;can&nbsp;pass&nbsp;the&nbsp;kwargs&nbsp;is_xml=True.<br>
+&nbsp;<br>
+:param&nbsp;bool&nbsp;keep_readonly:&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;serialize&nbsp;the&nbsp;readonly&nbsp;attributes<br>
+:returns:&nbsp;A&nbsp;dict&nbsp;JSON&nbsp;compatible&nbsp;<a href="builtins.html#object">object</a><br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Model-deserialize"><strong>deserialize</strong></a>(data, content_type=None)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Parse&nbsp;a&nbsp;str&nbsp;using&nbsp;the&nbsp;RestAPI&nbsp;syntax&nbsp;and&nbsp;return&nbsp;a&nbsp;model.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;data:&nbsp;A&nbsp;str&nbsp;using&nbsp;RestAPI&nbsp;structure.&nbsp;JSON&nbsp;by&nbsp;default.<br>
+:param&nbsp;str&nbsp;content_type:&nbsp;JSON&nbsp;by&nbsp;default,&nbsp;set&nbsp;application/xml&nbsp;if&nbsp;XML.<br>
+:returns:&nbsp;An&nbsp;instance&nbsp;of&nbsp;this&nbsp;model<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;something&nbsp;went&nbsp;wrong</tt></dd></dl>
+
+<dl><dt><a name="Model-enable_additional_properties_sending"><strong>enable_additional_properties_sending</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<dl><dt><a name="Model-from_dict"><strong>from_dict</strong></a>(data, key_extractors=None, content_type=None)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Parse&nbsp;a&nbsp;dict&nbsp;using&nbsp;given&nbsp;key&nbsp;extractor&nbsp;return&nbsp;a&nbsp;model.<br>
+&nbsp;<br>
+By&nbsp;default&nbsp;consider&nbsp;key<br>
+extractors&nbsp;(rest_key_case_insensitive_extractor,&nbsp;attribute_key_case_insensitive_extractor<br>
+and&nbsp;last_rest_key_case_insensitive_extractor)<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;data:&nbsp;A&nbsp;dict&nbsp;using&nbsp;RestAPI&nbsp;structure<br>
+:param&nbsp;str&nbsp;content_type:&nbsp;JSON&nbsp;by&nbsp;default,&nbsp;set&nbsp;application/xml&nbsp;if&nbsp;XML.<br>
+:returns:&nbsp;An&nbsp;instance&nbsp;of&nbsp;this&nbsp;model<br>
+:raises:&nbsp;DeserializationError&nbsp;if&nbsp;something&nbsp;went&nbsp;wrong</tt></dd></dl>
+
+<dl><dt><a name="Model-is_xml_model"><strong>is_xml_model</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RawDeserializer">class <strong>RawDeserializer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Class methods defined here:<br>
+<dl><dt><a name="RawDeserializer-deserialize_from_http_generics"><strong>deserialize_from_http_generics</strong></a>(body_bytes, headers)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deserialize&nbsp;from&nbsp;HTTP&nbsp;response.<br>
+&nbsp;<br>
+Use&nbsp;bytes&nbsp;and&nbsp;headers&nbsp;to&nbsp;NOT&nbsp;use&nbsp;any&nbsp;requests/aiohttp&nbsp;or&nbsp;whatever<br>
+specific&nbsp;implementation.<br>
+Headers&nbsp;will&nbsp;tested&nbsp;for&nbsp;"content-type"</tt></dd></dl>
+
+<dl><dt><a name="RawDeserializer-deserialize_from_text"><strong>deserialize_from_text</strong></a>(data, content_type=None)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Decode&nbsp;data&nbsp;according&nbsp;to&nbsp;content-type.<br>
+&nbsp;<br>
+Accept&nbsp;a&nbsp;stream&nbsp;of&nbsp;data&nbsp;as&nbsp;well,&nbsp;but&nbsp;will&nbsp;be&nbsp;load&nbsp;at&nbsp;once&nbsp;in&nbsp;memory&nbsp;for&nbsp;now.<br>
+&nbsp;<br>
+If&nbsp;no&nbsp;content-type,&nbsp;will&nbsp;return&nbsp;the&nbsp;string&nbsp;version&nbsp;(not&nbsp;bytes,&nbsp;not&nbsp;stream)<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Input,&nbsp;could&nbsp;be&nbsp;bytes&nbsp;or&nbsp;stream&nbsp;(will&nbsp;be&nbsp;decoded&nbsp;with&nbsp;UTF8)&nbsp;or&nbsp;text<br>
+:type&nbsp;data:&nbsp;str&nbsp;or&nbsp;bytes&nbsp;or&nbsp;IO<br>
+:param&nbsp;str&nbsp;content_type:&nbsp;The&nbsp;content&nbsp;type.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONTEXT_NAME</strong> = 'deserialized_data'</dl>
+
+<dl><dt><strong>JSON_REGEXP</strong> = re.compile('^(application|text)/([a-z+.]+\\+)?json$')</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Serializer">class <strong>Serializer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Serializer">Serializer</a>(classes=None)<br>
+&nbsp;<br>
+Request&nbsp;<a href="builtins.html#object">object</a>&nbsp;model&nbsp;serializer.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Serializer-__init__"><strong>__init__</strong></a>(self, classes=None)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Serializer-body"><strong>body</strong></a>(self, data, data_type, **kwargs)</dt><dd><tt>Serialize&nbsp;data&nbsp;intended&nbsp;for&nbsp;a&nbsp;request&nbsp;body.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;be&nbsp;serialized&nbsp;from.<br>
+:rtype:&nbsp;dict<br>
+:raises:&nbsp;SerializationError&nbsp;if&nbsp;serialization&nbsp;fails.<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;data&nbsp;is&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Serializer-header"><strong>header</strong></a>(self, name, data, data_type, **kwargs)</dt><dd><tt>Serialize&nbsp;data&nbsp;intended&nbsp;for&nbsp;a&nbsp;request&nbsp;header.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;be&nbsp;serialized&nbsp;from.<br>
+:rtype:&nbsp;str<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;serialization&nbsp;fails.<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;data&nbsp;is&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Serializer-query"><strong>query</strong></a>(self, name, data, data_type, **kwargs)</dt><dd><tt>Serialize&nbsp;data&nbsp;intended&nbsp;for&nbsp;a&nbsp;URL&nbsp;query.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;be&nbsp;serialized&nbsp;from.<br>
+:rtype:&nbsp;str<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;serialization&nbsp;fails.<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;data&nbsp;is&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_data"><strong>serialize_data</strong></a>(self, data, data_type, **kwargs)</dt><dd><tt>Serialize&nbsp;generic&nbsp;data&nbsp;according&nbsp;to&nbsp;supplied&nbsp;data&nbsp;type.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;be&nbsp;serialized&nbsp;from.<br>
+:param&nbsp;bool&nbsp;required:&nbsp;Whether&nbsp;it's&nbsp;essential&nbsp;that&nbsp;the&nbsp;data&nbsp;not&nbsp;be<br>
+&nbsp;empty&nbsp;or&nbsp;None<br>
+:raises:&nbsp;AttributeError&nbsp;if&nbsp;required&nbsp;data&nbsp;is&nbsp;None.<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;data&nbsp;is&nbsp;None<br>
+:raises:&nbsp;SerializationError&nbsp;if&nbsp;serialization&nbsp;fails.</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_dict"><strong>serialize_dict</strong></a>(self, attr, dict_type, **kwargs)</dt><dd><tt>Serialize&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;objects.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;dict_type:&nbsp;Type&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;the&nbsp;dictionary.<br>
+:param&nbsp;bool&nbsp;required:&nbsp;Whether&nbsp;the&nbsp;objects&nbsp;in&nbsp;the&nbsp;dictionary&nbsp;must<br>
+&nbsp;not&nbsp;be&nbsp;None&nbsp;or&nbsp;empty.<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_iter"><strong>serialize_iter</strong></a>(self, data, iter_type, div=None, **kwargs)</dt><dd><tt>Serialize&nbsp;iterable.<br>
+&nbsp;<br>
+Supported&nbsp;kwargs:<br>
+-&nbsp;serialization_ctxt&nbsp;dict&nbsp;:&nbsp;The&nbsp;current&nbsp;entry&nbsp;of&nbsp;_attribute_map,&nbsp;or&nbsp;same&nbsp;format.<br>
+&nbsp;&nbsp;serialization_ctxt['type']&nbsp;should&nbsp;be&nbsp;same&nbsp;as&nbsp;data_type.<br>
+-&nbsp;is_xml&nbsp;bool&nbsp;:&nbsp;If&nbsp;set,&nbsp;serialize&nbsp;as&nbsp;XML<br>
+&nbsp;<br>
+:param&nbsp;list&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;iter_type:&nbsp;Type&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;the&nbsp;iterable.<br>
+:param&nbsp;bool&nbsp;required:&nbsp;Whether&nbsp;the&nbsp;objects&nbsp;in&nbsp;the&nbsp;iterable&nbsp;must<br>
+&nbsp;not&nbsp;be&nbsp;None&nbsp;or&nbsp;empty.<br>
+:param&nbsp;str&nbsp;div:&nbsp;If&nbsp;set,&nbsp;this&nbsp;str&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;combine&nbsp;the&nbsp;elements<br>
+&nbsp;in&nbsp;the&nbsp;iterable&nbsp;into&nbsp;a&nbsp;combined&nbsp;string.&nbsp;Default&nbsp;is&nbsp;'None'.<br>
+:rtype:&nbsp;list,&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_object"><strong>serialize_object</strong></a>(self, attr, **kwargs)</dt><dd><tt>Serialize&nbsp;a&nbsp;generic&nbsp;<a href="builtins.html#object">object</a>.<br>
+This&nbsp;will&nbsp;be&nbsp;handled&nbsp;as&nbsp;a&nbsp;dictionary.&nbsp;If&nbsp;<a href="builtins.html#object">object</a>&nbsp;passed&nbsp;in&nbsp;is&nbsp;not<br>
+a&nbsp;basic&nbsp;type&nbsp;(str,&nbsp;int,&nbsp;float,&nbsp;dict,&nbsp;list)&nbsp;it&nbsp;will&nbsp;simply&nbsp;be<br>
+cast&nbsp;to&nbsp;str.<br>
+&nbsp;<br>
+:param&nbsp;dict&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;dict&nbsp;or&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-url"><strong>url</strong></a>(self, name, data, data_type, **kwargs)</dt><dd><tt>Serialize&nbsp;data&nbsp;intended&nbsp;for&nbsp;a&nbsp;URL&nbsp;path.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;The&nbsp;type&nbsp;to&nbsp;be&nbsp;serialized&nbsp;from.<br>
+:rtype:&nbsp;str<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;serialization&nbsp;fails.<br>
+:raises:&nbsp;ValueError&nbsp;if&nbsp;data&nbsp;is&nbsp;None</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Serializer-serialize_basic"><strong>serialize_basic</strong></a>(data, data_type, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Serialize&nbsp;basic&nbsp;builting&nbsp;data&nbsp;type.<br>
+Serializes&nbsp;objects&nbsp;to&nbsp;str,&nbsp;int,&nbsp;float&nbsp;or&nbsp;bool.<br>
+&nbsp;<br>
+Possible&nbsp;kwargs:<br>
+-&nbsp;basic_types_serializers&nbsp;dict[str,&nbsp;callable]&nbsp;:&nbsp;If&nbsp;set,&nbsp;use&nbsp;the&nbsp;callable&nbsp;as&nbsp;serializer<br>
+-&nbsp;is_xml&nbsp;bool&nbsp;:&nbsp;If&nbsp;set,&nbsp;use&nbsp;xml_basic_types_serializers<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:param&nbsp;str&nbsp;data_type:&nbsp;Type&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;the&nbsp;iterable.</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_unicode"><strong>serialize_unicode</strong></a>(data)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Special&nbsp;handling&nbsp;for&nbsp;serializing&nbsp;unicode&nbsp;strings&nbsp;in&nbsp;Py2.<br>
+Encode&nbsp;to&nbsp;UTF-8&nbsp;if&nbsp;unicode,&nbsp;otherwise&nbsp;handle&nbsp;as&nbsp;a&nbsp;str.<br>
+&nbsp;<br>
+:param&nbsp;data:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Serializer-serialize_base64"><strong>serialize_base64</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;str&nbsp;into&nbsp;base-64&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_bytearray"><strong>serialize_bytearray</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;bytearray&nbsp;into&nbsp;base-64&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_date"><strong>serialize_date</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Date&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;ISO-8601&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;Date&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_decimal"><strong>serialize_decimal</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Decimal&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;float.<br>
+&nbsp;<br>
+:param&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;float</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_duration"><strong>serialize_duration</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;TimeDelta&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;ISO-8601&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;TimeDelta&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_enum"><strong>serialize_enum</strong></a>(attr, enum_obj=None)</dt></dl>
+
+<dl><dt><a name="Serializer-serialize_iso"><strong>serialize_iso</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;ISO-8601&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;Datetime&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str<br>
+:raises:&nbsp;SerializationError&nbsp;if&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_long"><strong>serialize_long</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;long&nbsp;(Py2)&nbsp;or&nbsp;int&nbsp;(Py3).<br>
+&nbsp;<br>
+:param&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;int/long</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_rfc"><strong>serialize_rfc</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;<a href="http://www.rfc-editor.org/rfc/rfc1123.txt">RFC-1123</a>&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;Datetime&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str<br>
+:raises:&nbsp;TypeError&nbsp;if&nbsp;format&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_time"><strong>serialize_time</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Time&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;ISO-8601&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+:param&nbsp;datetime.time&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="Serializer-serialize_unix"><strong>serialize_unix</strong></a>(attr, **kwargs)</dt><dd><tt>Serialize&nbsp;Datetime&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;IntTime&nbsp;format.<br>
+This&nbsp;is&nbsp;represented&nbsp;as&nbsp;seconds.<br>
+&nbsp;<br>
+:param&nbsp;Datetime&nbsp;attr:&nbsp;Object&nbsp;to&nbsp;be&nbsp;serialized.<br>
+:rtype:&nbsp;int<br>
+:raises:&nbsp;SerializationError&nbsp;if&nbsp;format&nbsp;invalid</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>basic_types</strong> = {&lt;class 'str'&gt;: 'str', &lt;class 'int'&gt;: 'int', &lt;class 'bool'&gt;: 'bool', &lt;class 'float'&gt;: 'float'}</dl>
+
+<dl><dt><strong>days</strong> = {0: 'Mon', 1: 'Tue', 2: 'Wed', 3: 'Thu', 4: 'Fri', 5: 'Sat', 6: 'Sun'}</dl>
+
+<dl><dt><strong>months</strong> = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', ...}</dl>
+
+<dl><dt><strong>validation</strong> = {'max_items': &lt;function Serializer.&lt;lambda&gt;&gt;, 'max_length': &lt;function Serializer.&lt;lambda&gt;&gt;, 'maximum': &lt;function Serializer.&lt;lambda&gt;&gt;, 'maximum_ex': &lt;function Serializer.&lt;lambda&gt;&gt;, 'min_items': &lt;function Serializer.&lt;lambda&gt;&gt;, 'min_length': &lt;function Serializer.&lt;lambda&gt;&gt;, 'minimum': &lt;function Serializer.&lt;lambda&gt;&gt;, 'minimum_ex': &lt;function Serializer.&lt;lambda&gt;&gt;, 'multiple': &lt;function Serializer.&lt;lambda&gt;&gt;, 'pattern': &lt;function Serializer.&lt;lambda&gt;&gt;, ...}</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="UTC">class <strong>UTC</strong></a>(<a href="datetime.html#tzinfo">datetime.tzinfo</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Time&nbsp;Zone&nbsp;info&nbsp;for&nbsp;handling&nbsp;<a href="#UTC">UTC</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="digitalocean._serialization.html#UTC">UTC</a></dd>
+<dd><a href="datetime.html#tzinfo">datetime.tzinfo</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UTC-dst"><strong>dst</strong></a>(self, dt)</dt><dd><tt>No&nbsp;daylight&nbsp;saving&nbsp;for&nbsp;<a href="#UTC">UTC</a>.</tt></dd></dl>
+
+<dl><dt><a name="UTC-tzname"><strong>tzname</strong></a>(self, dt)</dt><dd><tt>Timestamp&nbsp;representation.</tt></dd></dl>
+
+<dl><dt><a name="UTC-utcoffset"><strong>utcoffset</strong></a>(self, dt)</dt><dd><tt>UTF&nbsp;offset&nbsp;for&nbsp;<a href="#UTC">UTC</a>&nbsp;is&nbsp;0.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="datetime.html#tzinfo">datetime.tzinfo</a>:<br>
+<dl><dt><a name="UTC-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="UTC-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>-&gt;&nbsp;(cls,&nbsp;state)</tt></dd></dl>
+
+<dl><dt><a name="UTC-fromutc"><strong>fromutc</strong></a>(...)</dt><dd><tt>datetime&nbsp;in&nbsp;<a href="#UTC">UTC</a>&nbsp;-&gt;&nbsp;datetime&nbsp;in&nbsp;local&nbsp;time.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="datetime.html#tzinfo">datetime.tzinfo</a>:<br>
+<dl><dt><a name="UTC-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-attribute_key_case_insensitive_extractor"><strong>attribute_key_case_insensitive_extractor</strong></a>(attr, _, data)</dt></dl>
+ <dl><dt><a name="-attribute_key_extractor"><strong>attribute_key_extractor</strong></a>(attr, _, data)</dt></dl>
+ <dl><dt><a name="-attribute_transformer"><strong>attribute_transformer</strong></a>(key, attr_desc, value)</dt><dd><tt>A&nbsp;key&nbsp;transformer&nbsp;that&nbsp;returns&nbsp;the&nbsp;Python&nbsp;attribute.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;name<br>
+:param&nbsp;dict&nbsp;attr_desc:&nbsp;The&nbsp;attribute&nbsp;metadata<br>
+:param&nbsp;<a href="builtins.html#object">object</a>&nbsp;value:&nbsp;The&nbsp;value<br>
+:returns:&nbsp;A&nbsp;key&nbsp;using&nbsp;attribute&nbsp;name</tt></dd></dl>
+ <dl><dt><a name="-full_restapi_key_transformer"><strong>full_restapi_key_transformer</strong></a>(key, attr_desc, value)</dt><dd><tt>A&nbsp;key&nbsp;transformer&nbsp;that&nbsp;returns&nbsp;the&nbsp;full&nbsp;RestAPI&nbsp;key&nbsp;path.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;_:&nbsp;The&nbsp;attribute&nbsp;name<br>
+:param&nbsp;dict&nbsp;attr_desc:&nbsp;The&nbsp;attribute&nbsp;metadata<br>
+:param&nbsp;<a href="builtins.html#object">object</a>&nbsp;value:&nbsp;The&nbsp;value<br>
+:returns:&nbsp;A&nbsp;list&nbsp;of&nbsp;keys&nbsp;using&nbsp;RestAPI&nbsp;syntax.</tt></dd></dl>
+ <dl><dt><a name="-last_rest_key_case_insensitive_extractor"><strong>last_rest_key_case_insensitive_extractor</strong></a>(attr, attr_desc, data)</dt><dd><tt>Extract&nbsp;the&nbsp;attribute&nbsp;in&nbsp;"data"&nbsp;based&nbsp;on&nbsp;the&nbsp;last&nbsp;part&nbsp;of&nbsp;the&nbsp;JSON&nbsp;path&nbsp;key.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;the&nbsp;case&nbsp;insensitive&nbsp;version&nbsp;of&nbsp;"last_rest_key_extractor"</tt></dd></dl>
+ <dl><dt><a name="-last_rest_key_extractor"><strong>last_rest_key_extractor</strong></a>(attr, attr_desc, data)</dt><dd><tt>Extract&nbsp;the&nbsp;attribute&nbsp;in&nbsp;"data"&nbsp;based&nbsp;on&nbsp;the&nbsp;last&nbsp;part&nbsp;of&nbsp;the&nbsp;JSON&nbsp;path&nbsp;key.</tt></dd></dl>
+ <dl><dt><a name="-last_restapi_key_transformer"><strong>last_restapi_key_transformer</strong></a>(key, attr_desc, value)</dt><dd><tt>A&nbsp;key&nbsp;transformer&nbsp;that&nbsp;returns&nbsp;the&nbsp;last&nbsp;RestAPI&nbsp;key.<br>
+&nbsp;<br>
+:param&nbsp;str&nbsp;key:&nbsp;The&nbsp;attribute&nbsp;name<br>
+:param&nbsp;dict&nbsp;attr_desc:&nbsp;The&nbsp;attribute&nbsp;metadata<br>
+:param&nbsp;<a href="builtins.html#object">object</a>&nbsp;value:&nbsp;The&nbsp;value<br>
+:returns:&nbsp;The&nbsp;last&nbsp;RestAPI&nbsp;key.</tt></dd></dl>
+ <dl><dt><a name="-rest_key_case_insensitive_extractor"><strong>rest_key_case_insensitive_extractor</strong></a>(attr, attr_desc, data)</dt></dl>
+ <dl><dt><a name="-rest_key_extractor"><strong>rest_key_extractor</strong></a>(attr, attr_desc, data)</dt></dl>
+ <dl><dt><a name="-xml_key_extractor"><strong>xml_key_extractor</strong></a>(attr, attr_desc, data)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Dict</strong> = typing.Dict<br>
+<strong>TYPE_CHECKING</strong> = False<br>
+<strong>TZ_UTC</strong> = datetime.timezone.utc</td></tr></table>
+</body></html>

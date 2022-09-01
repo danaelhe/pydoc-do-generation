@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package digitalocean</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>digitalocean</strong></big></big> (version dev)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/__init__.py">/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/__init__.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;coding=utf-8<br>
+#&nbsp;--------------------------------------------------------------------------<br>
+#&nbsp;Code&nbsp;generated&nbsp;by&nbsp;Microsoft&nbsp;(R)&nbsp;AutoRest&nbsp;Code&nbsp;Generator&nbsp;(autorest:&nbsp;3.9.0,&nbsp;generator:&nbsp;@autorest/python@6.0.1)<br>
+#&nbsp;Changes&nbsp;may&nbsp;cause&nbsp;incorrect&nbsp;behavior&nbsp;and&nbsp;will&nbsp;be&nbsp;lost&nbsp;if&nbsp;the&nbsp;code&nbsp;is&nbsp;regenerated.<br>
+#&nbsp;--------------------------------------------------------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="digitalocean._client.html">_client</a><br>
+<a href="digitalocean._configuration.html">_configuration</a><br>
+<a href="digitalocean._patch.html">_patch</a><br>
+</td><td width="25%" valign=top><a href="digitalocean._serialization.html">_serialization</a><br>
+<a href="digitalocean._vendor.html">_vendor</a><br>
+<a href="digitalocean._version.html">_version</a><br>
+</td><td width="25%" valign=top><a href="digitalocean.aio.html"><strong>aio</strong>&nbsp;(package)</a><br>
+<a href="digitalocean.custom_policies.html">custom_policies</a><br>
+<a href="digitalocean.exceptions.html">exceptions</a><br>
+</td><td width="25%" valign=top><a href="digitalocean.operations.html"><strong>operations</strong>&nbsp;(package)</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._patch.html#Client">digitalocean._patch.Client</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Client">class <strong>Client</strong></a>(<a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Client">Client</a>(token:&nbsp;str,&nbsp;*,&nbsp;timeout:&nbsp;int&nbsp;=&nbsp;120,&nbsp;**kwargs)<br>
+&nbsp;<br>
+The&nbsp;official&nbsp;DigitalOceanClient<br>
+&nbsp;<br>
+:param&nbsp;token:&nbsp;A&nbsp;valid&nbsp;API&nbsp;token.<br>
+:type&nbsp;token:&nbsp;str<br>
+:keyword&nbsp;endpoint:&nbsp;Service&nbsp;URL.&nbsp;Default&nbsp;value&nbsp;is&nbsp;"<a href="https://api.digitalocean.com">https://api.digitalocean.com</a>".<br>
+:paramtype&nbsp;endpoint:&nbsp;str<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="digitalocean._patch.html#Client">Client</a></dd>
+<dd><a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Client-__init__"><strong>__init__</strong></a>(self, token: str, *, timeout: int = 120, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>:<br>
+<dl><dt><a name="Client-__enter__"><strong>__enter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Client-__exit__"><strong>__exit__</strong></a>(self, *exc_details)</dt></dl>
+
+<dl><dt><a name="Client-close"><strong>close</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Client-send_request"><strong>send_request</strong></a>(self, request: azure.core.rest._rest_py3.HttpRequest, **kwargs: Any) -&gt; azure.core.rest._rest_py3.HttpResponse</dt><dd><tt>Runs&nbsp;the&nbsp;network&nbsp;request&nbsp;through&nbsp;the&nbsp;client's&nbsp;chained&nbsp;policies.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;from&nbsp;azure.core.rest&nbsp;import&nbsp;HttpRequest<br>
+&gt;&gt;&gt;&nbsp;request&nbsp;=&nbsp;HttpRequest("GET",&nbsp;"<a href="https://www.example.org/">https://www.example.org/</a>")<br>
+&lt;HttpRequest&nbsp;[GET],&nbsp;url:&nbsp;'<a href="https://www.example.org/">https://www.example.org/</a>'&gt;<br>
+&gt;&gt;&gt;&nbsp;response&nbsp;=&nbsp;client.<a href="#Client-send_request">send_request</a>(request)<br>
+&lt;HttpResponse:&nbsp;200&nbsp;OK&gt;<br>
+&nbsp;<br>
+For&nbsp;more&nbsp;information&nbsp;on&nbsp;this&nbsp;code&nbsp;flow,&nbsp;see&nbsp;<a href="https://aka.ms/azsdk/dpcodegen/python/send_request">https://aka.ms/azsdk/dpcodegen/python/send_request</a><br>
+&nbsp;<br>
+:param&nbsp;request:&nbsp;The&nbsp;network&nbsp;request&nbsp;you&nbsp;want&nbsp;to&nbsp;make.&nbsp;Required.<br>
+:type&nbsp;request:&nbsp;~azure.core.rest.HttpRequest<br>
+:keyword&nbsp;bool&nbsp;stream:&nbsp;Whether&nbsp;the&nbsp;response&nbsp;payload&nbsp;will&nbsp;be&nbsp;streamed.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+:return:&nbsp;The&nbsp;response&nbsp;of&nbsp;your&nbsp;network&nbsp;call.&nbsp;Does&nbsp;not&nbsp;do&nbsp;error&nbsp;handling&nbsp;on&nbsp;your&nbsp;response.<br>
+:rtype:&nbsp;~azure.core.rest.HttpResponse</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GeneratedClient">class <strong>GeneratedClient</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#GeneratedClient">GeneratedClient</a>(credential:&nbsp;'TokenCredential',&nbsp;*,&nbsp;endpoint:&nbsp;str&nbsp;=&nbsp;'<a href="https://api.digitalocean.com">https://api.digitalocean.com</a>',&nbsp;**kwargs:&nbsp;Any)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Introduction<br>
+============<br>
+&nbsp;<br>
+The&nbsp;DigitalOcean&nbsp;API&nbsp;allows&nbsp;you&nbsp;to&nbsp;manage&nbsp;Droplets&nbsp;and&nbsp;resources&nbsp;within&nbsp;the<br>
+DigitalOcean&nbsp;cloud&nbsp;in&nbsp;a&nbsp;simple,&nbsp;programmatic&nbsp;way&nbsp;using&nbsp;conventional&nbsp;HTTP&nbsp;requests.<br>
+&nbsp;<br>
+All&nbsp;of&nbsp;the&nbsp;functionality&nbsp;that&nbsp;you&nbsp;are&nbsp;familiar&nbsp;with&nbsp;in&nbsp;the&nbsp;DigitalOcean<br>
+control&nbsp;panel&nbsp;is&nbsp;also&nbsp;available&nbsp;through&nbsp;the&nbsp;API,&nbsp;allowing&nbsp;you&nbsp;to&nbsp;script&nbsp;the<br>
+complex&nbsp;actions&nbsp;that&nbsp;your&nbsp;situation&nbsp;requires.<br>
+&nbsp;<br>
+The&nbsp;API&nbsp;documentation&nbsp;will&nbsp;start&nbsp;with&nbsp;a&nbsp;general&nbsp;overview&nbsp;about&nbsp;the&nbsp;design<br>
+and&nbsp;technology&nbsp;that&nbsp;has&nbsp;been&nbsp;implemented,&nbsp;followed&nbsp;by&nbsp;reference&nbsp;information<br>
+about&nbsp;specific&nbsp;endpoints.<br>
+&nbsp;<br>
+Requests<br>
+--------<br>
+&nbsp;<br>
+Any&nbsp;tool&nbsp;that&nbsp;is&nbsp;fluent&nbsp;in&nbsp;HTTP&nbsp;can&nbsp;communicate&nbsp;with&nbsp;the&nbsp;API&nbsp;simply&nbsp;by<br>
+requesting&nbsp;the&nbsp;correct&nbsp;URI.&nbsp;Requests&nbsp;should&nbsp;be&nbsp;made&nbsp;using&nbsp;the&nbsp;HTTPS&nbsp;protocol<br>
+so&nbsp;that&nbsp;traffic&nbsp;is&nbsp;encrypted.&nbsp;The&nbsp;interface&nbsp;responds&nbsp;to&nbsp;different&nbsp;methods<br>
+depending&nbsp;on&nbsp;the&nbsp;action&nbsp;required.<br>
+&nbsp;<br>
+..&nbsp;list-table::<br>
+&nbsp;&nbsp;&nbsp;:header-rows:&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;Method<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Usage<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;GET<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;For&nbsp;simple&nbsp;retrieval&nbsp;of&nbsp;information&nbsp;about&nbsp;your&nbsp;account,&nbsp;Droplets,&nbsp;or&nbsp;environment,&nbsp;you<br>
+should&nbsp;use&nbsp;the&nbsp;GET&nbsp;method.&nbsp;&nbsp;The&nbsp;information&nbsp;you&nbsp;request&nbsp;will&nbsp;be&nbsp;returned&nbsp;to&nbsp;you&nbsp;as&nbsp;a&nbsp;JSON<br>
+<a href="builtins.html#object">object</a>.&nbsp;The&nbsp;attributes&nbsp;defined&nbsp;by&nbsp;the&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;form&nbsp;additional&nbsp;requests.&nbsp;&nbsp;Any<br>
+request&nbsp;using&nbsp;the&nbsp;GET&nbsp;method&nbsp;is&nbsp;read-only&nbsp;and&nbsp;will&nbsp;not&nbsp;affect&nbsp;any&nbsp;of&nbsp;the&nbsp;objects&nbsp;you&nbsp;are<br>
+querying.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;DELETE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;To&nbsp;destroy&nbsp;a&nbsp;resource&nbsp;and&nbsp;remove&nbsp;it&nbsp;from&nbsp;your&nbsp;account&nbsp;and&nbsp;environment,&nbsp;the&nbsp;DELETE&nbsp;method<br>
+should&nbsp;be&nbsp;used.&nbsp;&nbsp;This&nbsp;will&nbsp;remove&nbsp;the&nbsp;specified&nbsp;<a href="builtins.html#object">object</a>&nbsp;if&nbsp;it&nbsp;is&nbsp;found.&nbsp;&nbsp;If&nbsp;it&nbsp;is&nbsp;not&nbsp;found,&nbsp;the<br>
+operation&nbsp;will&nbsp;return&nbsp;a&nbsp;response&nbsp;indicating&nbsp;that&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;not&nbsp;found.&nbsp;This&nbsp;idempotency<br>
+means&nbsp;that&nbsp;you&nbsp;do&nbsp;not&nbsp;have&nbsp;to&nbsp;check&nbsp;for&nbsp;a&nbsp;resource's&nbsp;availability&nbsp;prior&nbsp;to&nbsp;issuing&nbsp;a&nbsp;delete<br>
+command,&nbsp;the&nbsp;final&nbsp;state&nbsp;will&nbsp;be&nbsp;the&nbsp;same&nbsp;regardless&nbsp;of&nbsp;its&nbsp;existence.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;PUT<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;To&nbsp;update&nbsp;the&nbsp;information&nbsp;about&nbsp;a&nbsp;resource&nbsp;in&nbsp;your&nbsp;account,&nbsp;the&nbsp;PUT&nbsp;method&nbsp;is&nbsp;available.<br>
+Like&nbsp;the&nbsp;DELETE&nbsp;Method,&nbsp;the&nbsp;PUT&nbsp;method&nbsp;is&nbsp;idempotent.&nbsp;&nbsp;It&nbsp;sets&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;target&nbsp;using<br>
+the&nbsp;provided&nbsp;values,&nbsp;regardless&nbsp;of&nbsp;their&nbsp;current&nbsp;values.&nbsp;Requests&nbsp;using&nbsp;the&nbsp;PUT&nbsp;method&nbsp;do&nbsp;not<br>
+need&nbsp;to&nbsp;check&nbsp;the&nbsp;current&nbsp;attributes&nbsp;of&nbsp;the&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;PATCH<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Some&nbsp;resources&nbsp;support&nbsp;partial&nbsp;modification.&nbsp;In&nbsp;these&nbsp;cases,&nbsp;the&nbsp;PATCH&nbsp;method&nbsp;is<br>
+available.&nbsp;Unlike&nbsp;PUT&nbsp;which&nbsp;generally&nbsp;requires&nbsp;a&nbsp;complete&nbsp;representation&nbsp;of&nbsp;a&nbsp;resource,&nbsp;a&nbsp;PATCH<br>
+request&nbsp;is&nbsp;is&nbsp;a&nbsp;set&nbsp;of&nbsp;instructions&nbsp;on&nbsp;how&nbsp;to&nbsp;modify&nbsp;a&nbsp;resource&nbsp;updating&nbsp;only&nbsp;specific<br>
+attributes.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;POST<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;To&nbsp;create&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>,&nbsp;your&nbsp;request&nbsp;should&nbsp;specify&nbsp;the&nbsp;POST&nbsp;method.&nbsp;The&nbsp;POST&nbsp;request<br>
+includes&nbsp;all&nbsp;of&nbsp;the&nbsp;attributes&nbsp;necessary&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;When&nbsp;you&nbsp;wish&nbsp;to&nbsp;create&nbsp;a&nbsp;new<br>
+<a href="builtins.html#object">object</a>,&nbsp;send&nbsp;a&nbsp;POST&nbsp;request&nbsp;to&nbsp;the&nbsp;target&nbsp;endpoint.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;HEAD<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Finally,&nbsp;to&nbsp;retrieve&nbsp;metadata&nbsp;information,&nbsp;you&nbsp;should&nbsp;use&nbsp;the&nbsp;HEAD&nbsp;method&nbsp;to&nbsp;get&nbsp;the<br>
+headers.&nbsp;&nbsp;This&nbsp;returns&nbsp;only&nbsp;the&nbsp;header&nbsp;of&nbsp;what&nbsp;would&nbsp;be&nbsp;returned&nbsp;with&nbsp;an&nbsp;associated&nbsp;GET<br>
+request.&nbsp;Response&nbsp;headers&nbsp;contain&nbsp;some&nbsp;useful&nbsp;information&nbsp;about&nbsp;your&nbsp;API&nbsp;access&nbsp;and&nbsp;the&nbsp;results<br>
+that&nbsp;are&nbsp;available&nbsp;for&nbsp;your&nbsp;request.&nbsp;For&nbsp;instance,&nbsp;the&nbsp;headers&nbsp;contain&nbsp;your&nbsp;current&nbsp;rate-limit<br>
+value&nbsp;and&nbsp;the&nbsp;amount&nbsp;of&nbsp;time&nbsp;available&nbsp;until&nbsp;the&nbsp;limit&nbsp;resets.&nbsp;It&nbsp;also&nbsp;contains&nbsp;metrics&nbsp;about<br>
+the&nbsp;total&nbsp;number&nbsp;of&nbsp;objects&nbsp;found,&nbsp;pagination&nbsp;information,&nbsp;and&nbsp;the&nbsp;total&nbsp;content&nbsp;length.<br>
+&nbsp;<br>
+&nbsp;<br>
+HTTP&nbsp;Statuses<br>
+-------------<br>
+&nbsp;<br>
+Along&nbsp;with&nbsp;the&nbsp;HTTP&nbsp;methods&nbsp;that&nbsp;the&nbsp;API&nbsp;responds&nbsp;to,&nbsp;it&nbsp;will&nbsp;also&nbsp;return<br>
+standard&nbsp;HTTP&nbsp;statuses,&nbsp;including&nbsp;error&nbsp;codes.<br>
+&nbsp;<br>
+In&nbsp;the&nbsp;event&nbsp;of&nbsp;a&nbsp;problem,&nbsp;the&nbsp;status&nbsp;will&nbsp;contain&nbsp;the&nbsp;error&nbsp;code,&nbsp;while&nbsp;the<br>
+body&nbsp;of&nbsp;the&nbsp;response&nbsp;will&nbsp;usually&nbsp;contain&nbsp;additional&nbsp;information&nbsp;about&nbsp;the<br>
+problem&nbsp;that&nbsp;was&nbsp;encountered.<br>
+&nbsp;<br>
+In&nbsp;general,&nbsp;if&nbsp;the&nbsp;status&nbsp;returned&nbsp;is&nbsp;in&nbsp;the&nbsp;200&nbsp;range,&nbsp;it&nbsp;indicates&nbsp;that<br>
+the&nbsp;request&nbsp;was&nbsp;fulfilled&nbsp;successfully&nbsp;and&nbsp;that&nbsp;no&nbsp;error&nbsp;was&nbsp;encountered.<br>
+&nbsp;<br>
+Return&nbsp;codes&nbsp;in&nbsp;the&nbsp;400&nbsp;range&nbsp;typically&nbsp;indicate&nbsp;that&nbsp;there&nbsp;was&nbsp;an&nbsp;issue<br>
+with&nbsp;the&nbsp;request&nbsp;that&nbsp;was&nbsp;sent.&nbsp;Among&nbsp;other&nbsp;things,&nbsp;this&nbsp;could&nbsp;mean&nbsp;that&nbsp;you<br>
+did&nbsp;not&nbsp;authenticate&nbsp;correctly,&nbsp;that&nbsp;you&nbsp;are&nbsp;requesting&nbsp;an&nbsp;action&nbsp;that&nbsp;you<br>
+do&nbsp;not&nbsp;have&nbsp;authorization&nbsp;for,&nbsp;that&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;you&nbsp;are&nbsp;requesting&nbsp;does&nbsp;not<br>
+exist,&nbsp;or&nbsp;that&nbsp;your&nbsp;request&nbsp;is&nbsp;malformed.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;receive&nbsp;a&nbsp;status&nbsp;in&nbsp;the&nbsp;500&nbsp;range,&nbsp;this&nbsp;generally&nbsp;indicates&nbsp;a<br>
+server-side&nbsp;problem.&nbsp;This&nbsp;means&nbsp;that&nbsp;we&nbsp;are&nbsp;having&nbsp;an&nbsp;issue&nbsp;on&nbsp;our&nbsp;end&nbsp;and<br>
+cannot&nbsp;fulfill&nbsp;your&nbsp;request&nbsp;currently.<br>
+&nbsp;<br>
+400&nbsp;and&nbsp;500&nbsp;level&nbsp;error&nbsp;responses&nbsp;will&nbsp;include&nbsp;a&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;their&nbsp;body,<br>
+including&nbsp;the&nbsp;following&nbsp;attributes:<br>
+&nbsp;<br>
+..&nbsp;list-table::<br>
+&nbsp;&nbsp;&nbsp;:header-rows:&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;Name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Description<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A&nbsp;short&nbsp;identifier&nbsp;corresponding&nbsp;to&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;returned.&nbsp;For&nbsp;example,&nbsp;the&nbsp;ID<br>
+for&nbsp;a&nbsp;response&nbsp;returning&nbsp;a&nbsp;404&nbsp;status&nbsp;code&nbsp;would&nbsp;be&nbsp;"not_found."<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;message<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A&nbsp;message&nbsp;providing&nbsp;additional&nbsp;information&nbsp;about&nbsp;the&nbsp;error,&nbsp;including&nbsp;details&nbsp;to&nbsp;help<br>
+resolve&nbsp;it&nbsp;when&nbsp;possible.<br>
+&nbsp;&nbsp;&nbsp;*&nbsp;-&nbsp;request_id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Optionally,&nbsp;some&nbsp;endpoints&nbsp;may&nbsp;include&nbsp;a&nbsp;request&nbsp;ID&nbsp;that&nbsp;should&nbsp;be&nbsp;provided&nbsp;when<br>
+reporting&nbsp;bugs&nbsp;or&nbsp;opening&nbsp;support&nbsp;tickets&nbsp;to&nbsp;help&nbsp;identify&nbsp;the&nbsp;issue.<br>
+&nbsp;<br>
+&nbsp;<br>
+Example&nbsp;Error&nbsp;Response<br>
+^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP/1.1&nbsp;403&nbsp;Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id":&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"forbidden",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"message":&nbsp;&nbsp;"You&nbsp;do&nbsp;not&nbsp;have&nbsp;access&nbsp;for&nbsp;the&nbsp;attempted&nbsp;action."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Responses<br>
+---------<br>
+&nbsp;<br>
+When&nbsp;a&nbsp;request&nbsp;is&nbsp;successful,&nbsp;a&nbsp;response&nbsp;body&nbsp;will&nbsp;typically&nbsp;be&nbsp;sent&nbsp;back&nbsp;in<br>
+the&nbsp;form&nbsp;of&nbsp;a&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>.&nbsp;An&nbsp;exception&nbsp;to&nbsp;this&nbsp;is&nbsp;when&nbsp;a&nbsp;DELETE&nbsp;request&nbsp;is<br>
+processed,&nbsp;which&nbsp;will&nbsp;result&nbsp;in&nbsp;a&nbsp;successful&nbsp;HTTP&nbsp;204&nbsp;status&nbsp;and&nbsp;an&nbsp;empty<br>
+response&nbsp;body.<br>
+&nbsp;<br>
+Inside&nbsp;of&nbsp;this&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>,&nbsp;the&nbsp;resource&nbsp;root&nbsp;that&nbsp;was&nbsp;the&nbsp;target&nbsp;of&nbsp;the<br>
+request&nbsp;will&nbsp;be&nbsp;set&nbsp;as&nbsp;the&nbsp;key.&nbsp;This&nbsp;will&nbsp;be&nbsp;the&nbsp;singular&nbsp;form&nbsp;of&nbsp;the&nbsp;word<br>
+if&nbsp;the&nbsp;request&nbsp;operated&nbsp;on&nbsp;a&nbsp;single&nbsp;<a href="builtins.html#object">object</a>,&nbsp;and&nbsp;the&nbsp;plural&nbsp;form&nbsp;of&nbsp;the&nbsp;word<br>
+if&nbsp;a&nbsp;collection&nbsp;was&nbsp;processed.<br>
+&nbsp;<br>
+For&nbsp;example,&nbsp;if&nbsp;you&nbsp;send&nbsp;a&nbsp;GET&nbsp;request&nbsp;to&nbsp;``/v2/droplets/$DROPLET_ID``&nbsp;you<br>
+will&nbsp;get&nbsp;back&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;with&nbsp;a&nbsp;key&nbsp;called&nbsp;"\&nbsp;``droplet``\&nbsp;".&nbsp;However,&nbsp;if&nbsp;you&nbsp;send<br>
+the&nbsp;GET&nbsp;request&nbsp;to&nbsp;the&nbsp;general&nbsp;collection&nbsp;at&nbsp;``/v2/droplets``\&nbsp;,&nbsp;you&nbsp;will&nbsp;get<br>
+back&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;with&nbsp;a&nbsp;key&nbsp;called&nbsp;"\&nbsp;``droplets``\&nbsp;".<br>
+&nbsp;<br>
+The&nbsp;value&nbsp;of&nbsp;these&nbsp;keys&nbsp;will&nbsp;generally&nbsp;be&nbsp;a&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>&nbsp;for&nbsp;a&nbsp;request&nbsp;on&nbsp;a<br>
+single&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;an&nbsp;array&nbsp;of&nbsp;objects&nbsp;for&nbsp;a&nbsp;request&nbsp;on&nbsp;a&nbsp;collection&nbsp;of<br>
+objects.<br>
+&nbsp;<br>
+Response&nbsp;for&nbsp;a&nbsp;Single&nbsp;Object<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"droplet":&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"example.com"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Response&nbsp;for&nbsp;an&nbsp;Object&nbsp;Collection<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"droplets":&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"example.com"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"second.com"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Meta<br>
+----<br>
+&nbsp;<br>
+In&nbsp;addition&nbsp;to&nbsp;the&nbsp;main&nbsp;resource&nbsp;root,&nbsp;the&nbsp;response&nbsp;may&nbsp;also&nbsp;contain&nbsp;a<br>
+``meta``&nbsp;<a href="builtins.html#object">object</a>.&nbsp;This&nbsp;<a href="builtins.html#object">object</a>&nbsp;contains&nbsp;information&nbsp;about&nbsp;the&nbsp;response&nbsp;itself.<br>
+&nbsp;<br>
+The&nbsp;``meta``&nbsp;<a href="builtins.html#object">object</a>&nbsp;contains&nbsp;a&nbsp;``total``&nbsp;key&nbsp;that&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;total&nbsp;number&nbsp;of<br>
+objects&nbsp;returned&nbsp;by&nbsp;the&nbsp;request.&nbsp;This&nbsp;has&nbsp;implications&nbsp;on&nbsp;the&nbsp;``links``&nbsp;<a href="builtins.html#object">object</a><br>
+and&nbsp;pagination.<br>
+&nbsp;<br>
+The&nbsp;``meta``&nbsp;<a href="builtins.html#object">object</a>&nbsp;will&nbsp;only&nbsp;be&nbsp;displayed&nbsp;when&nbsp;it&nbsp;has&nbsp;a&nbsp;value.&nbsp;Currently,&nbsp;the<br>
+``meta``&nbsp;<a href="builtins.html#object">object</a>&nbsp;will&nbsp;have&nbsp;a&nbsp;value&nbsp;when&nbsp;a&nbsp;request&nbsp;is&nbsp;made&nbsp;on&nbsp;a&nbsp;collection&nbsp;(like<br>
+``droplets``&nbsp;or&nbsp;``domains``\&nbsp;).<br>
+&nbsp;<br>
+Sample&nbsp;Meta&nbsp;Object<br>
+^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"meta":&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total":&nbsp;43<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Links&nbsp;&amp;&nbsp;Pagination<br>
+------------------<br>
+&nbsp;<br>
+The&nbsp;``links``&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;returned&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;response&nbsp;body&nbsp;when&nbsp;pagination<br>
+is&nbsp;enabled.&nbsp;By&nbsp;default,&nbsp;20&nbsp;objects&nbsp;are&nbsp;returned&nbsp;per&nbsp;page.&nbsp;If&nbsp;the&nbsp;response<br>
+contains&nbsp;20&nbsp;objects&nbsp;or&nbsp;fewer,&nbsp;no&nbsp;``links``&nbsp;<a href="builtins.html#object">object</a>&nbsp;will&nbsp;be&nbsp;returned.&nbsp;If&nbsp;the<br>
+response&nbsp;contains&nbsp;more&nbsp;than&nbsp;20&nbsp;objects,&nbsp;the&nbsp;first&nbsp;20&nbsp;will&nbsp;be&nbsp;returned&nbsp;along<br>
+with&nbsp;the&nbsp;``links``&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+You&nbsp;can&nbsp;request&nbsp;a&nbsp;different&nbsp;pagination&nbsp;limit&nbsp;or&nbsp;force&nbsp;pagination&nbsp;by<br>
+appending&nbsp;``?per_page=``&nbsp;to&nbsp;the&nbsp;request&nbsp;with&nbsp;the&nbsp;number&nbsp;of&nbsp;items&nbsp;you&nbsp;would<br>
+like&nbsp;per&nbsp;page.&nbsp;For&nbsp;instance,&nbsp;to&nbsp;show&nbsp;only&nbsp;two&nbsp;results&nbsp;per&nbsp;page,&nbsp;you&nbsp;could<br>
+add&nbsp;``?per_page=2``&nbsp;to&nbsp;the&nbsp;end&nbsp;of&nbsp;your&nbsp;query.&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;results<br>
+per&nbsp;page&nbsp;is&nbsp;200.<br>
+&nbsp;<br>
+The&nbsp;``links``&nbsp;<a href="builtins.html#object">object</a>&nbsp;contains&nbsp;a&nbsp;``pages``&nbsp;<a href="builtins.html#object">object</a>.&nbsp;The&nbsp;``pages``&nbsp;<a href="builtins.html#object">object</a>,&nbsp;in&nbsp;turn,<br>
+contains&nbsp;keys&nbsp;indicating&nbsp;the&nbsp;relationship&nbsp;of&nbsp;additional&nbsp;pages.&nbsp;The&nbsp;values&nbsp;of<br>
+these&nbsp;are&nbsp;the&nbsp;URLs&nbsp;of&nbsp;the&nbsp;associated&nbsp;pages.&nbsp;The&nbsp;keys&nbsp;will&nbsp;be&nbsp;one&nbsp;of&nbsp;the<br>
+following:<br>
+&nbsp;<br>
+&nbsp;<br>
+*&nbsp;**first**\&nbsp;:&nbsp;The&nbsp;URI&nbsp;of&nbsp;the&nbsp;first&nbsp;page&nbsp;of&nbsp;results.<br>
+*&nbsp;**prev**\&nbsp;:&nbsp;The&nbsp;URI&nbsp;of&nbsp;the&nbsp;previous&nbsp;sequential&nbsp;page&nbsp;of&nbsp;results.<br>
+*&nbsp;**next**\&nbsp;:&nbsp;The&nbsp;URI&nbsp;of&nbsp;the&nbsp;next&nbsp;sequential&nbsp;page&nbsp;of&nbsp;results.<br>
+*&nbsp;**last**\&nbsp;:&nbsp;The&nbsp;URI&nbsp;of&nbsp;the&nbsp;last&nbsp;page&nbsp;of&nbsp;results.<br>
+&nbsp;<br>
+The&nbsp;``pages``&nbsp;<a href="builtins.html#object">object</a>&nbsp;will&nbsp;only&nbsp;include&nbsp;the&nbsp;links&nbsp;that&nbsp;make&nbsp;sense.&nbsp;So&nbsp;for&nbsp;the<br>
+first&nbsp;page&nbsp;of&nbsp;results,&nbsp;no&nbsp;``first``&nbsp;or&nbsp;``prev``&nbsp;links&nbsp;will&nbsp;ever&nbsp;be&nbsp;set.&nbsp;This<br>
+convention&nbsp;holds&nbsp;true&nbsp;in&nbsp;other&nbsp;situations&nbsp;where&nbsp;a&nbsp;link&nbsp;would&nbsp;not&nbsp;make&nbsp;sense.<br>
+&nbsp;<br>
+Sample&nbsp;Links&nbsp;Object<br>
+^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"links":&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pages":&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"last":&nbsp;"<a href="https://api.digitalocean.com/v2/images?page=2">https://api.digitalocean.com/v2/images?page=2</a>",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"next":&nbsp;"<a href="https://api.digitalocean.com/v2/images?page=2">https://api.digitalocean.com/v2/images?page=2</a>"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Rate&nbsp;Limit<br>
+----------<br>
+&nbsp;<br>
+Requests&nbsp;through&nbsp;the&nbsp;API&nbsp;are&nbsp;rate&nbsp;limited&nbsp;per&nbsp;OAuth&nbsp;token.&nbsp;Current&nbsp;rate&nbsp;limits:<br>
+&nbsp;<br>
+&nbsp;<br>
+*&nbsp;5,000&nbsp;requests&nbsp;per&nbsp;hour<br>
+*&nbsp;250&nbsp;requests&nbsp;per&nbsp;minute&nbsp;(5%&nbsp;of&nbsp;the&nbsp;hourly&nbsp;total)<br>
+&nbsp;<br>
+Once&nbsp;you&nbsp;exceed&nbsp;either&nbsp;limit,&nbsp;you&nbsp;will&nbsp;be&nbsp;rate&nbsp;limited&nbsp;until&nbsp;the&nbsp;next&nbsp;cycle<br>
+starts.&nbsp;Space&nbsp;out&nbsp;any&nbsp;requests&nbsp;that&nbsp;you&nbsp;would&nbsp;otherwise&nbsp;issue&nbsp;in&nbsp;bursts&nbsp;for<br>
+the&nbsp;best&nbsp;results.<br>
+&nbsp;<br>
+The&nbsp;rate&nbsp;limiting&nbsp;information&nbsp;is&nbsp;contained&nbsp;within&nbsp;the&nbsp;response&nbsp;headers&nbsp;of<br>
+each&nbsp;request.&nbsp;The&nbsp;relevant&nbsp;headers&nbsp;are:<br>
+&nbsp;<br>
+&nbsp;<br>
+*&nbsp;**RateLimit-Limit**\&nbsp;:&nbsp;The&nbsp;number&nbsp;of&nbsp;requests&nbsp;that&nbsp;can&nbsp;be&nbsp;made&nbsp;per&nbsp;hour.<br>
+*&nbsp;**RateLimit-Remaining**\&nbsp;:&nbsp;The&nbsp;number&nbsp;of&nbsp;requests&nbsp;that&nbsp;remain&nbsp;before&nbsp;you&nbsp;hit&nbsp;your&nbsp;request<br>
+limit.&nbsp;See&nbsp;the&nbsp;information&nbsp;below&nbsp;for&nbsp;how&nbsp;the&nbsp;request&nbsp;limits&nbsp;expire.<br>
+*&nbsp;**RateLimit-Reset**\&nbsp;:&nbsp;This&nbsp;represents&nbsp;the&nbsp;time&nbsp;when&nbsp;the&nbsp;oldest&nbsp;request&nbsp;will&nbsp;expire.&nbsp;The<br>
+value&nbsp;is&nbsp;given&nbsp;in&nbsp;`Unix&nbsp;epoch&nbsp;time&nbsp;&lt;<a href="http://en.wikipedia.org/wiki/Unix_time&gt;`_">http://en.wikipedia.org/wiki/Unix_time&gt;`_</a>.&nbsp;See&nbsp;below&nbsp;for<br>
+more&nbsp;information&nbsp;about&nbsp;how&nbsp;request&nbsp;limits&nbsp;expire.<br>
+&nbsp;<br>
+As&nbsp;long&nbsp;as&nbsp;the&nbsp;``RateLimit-Remaining``&nbsp;count&nbsp;is&nbsp;above&nbsp;zero,&nbsp;you&nbsp;will&nbsp;be&nbsp;able<br>
+to&nbsp;make&nbsp;additional&nbsp;requests.<br>
+&nbsp;<br>
+The&nbsp;way&nbsp;that&nbsp;a&nbsp;request&nbsp;expires&nbsp;and&nbsp;is&nbsp;removed&nbsp;from&nbsp;the&nbsp;current&nbsp;limit&nbsp;count<br>
+is&nbsp;important&nbsp;to&nbsp;understand.&nbsp;Rather&nbsp;than&nbsp;counting&nbsp;all&nbsp;of&nbsp;the&nbsp;requests&nbsp;for&nbsp;an<br>
+hour&nbsp;and&nbsp;resetting&nbsp;the&nbsp;``RateLimit-Remaining``&nbsp;value&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;hour,<br>
+each&nbsp;request&nbsp;instead&nbsp;has&nbsp;its&nbsp;own&nbsp;timer.<br>
+&nbsp;<br>
+This&nbsp;means&nbsp;that&nbsp;each&nbsp;request&nbsp;contributes&nbsp;toward&nbsp;the&nbsp;``RateLimit-Remaining``<br>
+count&nbsp;for&nbsp;one&nbsp;complete&nbsp;hour&nbsp;after&nbsp;the&nbsp;request&nbsp;is&nbsp;made.&nbsp;When&nbsp;that&nbsp;request's<br>
+timer&nbsp;runs&nbsp;out,&nbsp;it&nbsp;is&nbsp;no&nbsp;longer&nbsp;counted&nbsp;towards&nbsp;the&nbsp;request&nbsp;limit.<br>
+&nbsp;<br>
+This&nbsp;has&nbsp;implications&nbsp;on&nbsp;the&nbsp;meaning&nbsp;of&nbsp;the&nbsp;``RateLimit-Reset``&nbsp;header&nbsp;as<br>
+well.&nbsp;Because&nbsp;the&nbsp;entire&nbsp;rate&nbsp;limit&nbsp;is&nbsp;not&nbsp;reset&nbsp;at&nbsp;one&nbsp;time,&nbsp;the&nbsp;value&nbsp;of<br>
+this&nbsp;header&nbsp;is&nbsp;set&nbsp;to&nbsp;the&nbsp;time&nbsp;when&nbsp;the&nbsp;*oldest*&nbsp;request&nbsp;will&nbsp;expire.<br>
+&nbsp;<br>
+Keep&nbsp;this&nbsp;in&nbsp;mind&nbsp;if&nbsp;you&nbsp;see&nbsp;your&nbsp;``RateLimit-Reset``&nbsp;value&nbsp;change,&nbsp;but&nbsp;not<br>
+move&nbsp;an&nbsp;entire&nbsp;hour&nbsp;into&nbsp;the&nbsp;future.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;``RateLimit-Remaining``&nbsp;reaches&nbsp;zero,&nbsp;subsequent&nbsp;requests&nbsp;will&nbsp;receive<br>
+a&nbsp;429&nbsp;error&nbsp;code&nbsp;until&nbsp;the&nbsp;request&nbsp;reset&nbsp;has&nbsp;been&nbsp;reached.&nbsp;You&nbsp;can&nbsp;see&nbsp;the<br>
+format&nbsp;of&nbsp;the&nbsp;response&nbsp;in&nbsp;the&nbsp;examples.<br>
+&nbsp;<br>
+**Note:**&nbsp;The&nbsp;following&nbsp;endpoints&nbsp;have&nbsp;special&nbsp;rate&nbsp;limit&nbsp;requirements&nbsp;that<br>
+are&nbsp;independent&nbsp;of&nbsp;the&nbsp;limits&nbsp;defined&nbsp;above.<br>
+&nbsp;<br>
+&nbsp;<br>
+*&nbsp;Only&nbsp;12&nbsp;``POST``&nbsp;requests&nbsp;to&nbsp;the&nbsp;``/v2/floating_ips``&nbsp;endpoint&nbsp;to&nbsp;create&nbsp;Floating&nbsp;IPs&nbsp;can&nbsp;be<br>
+made&nbsp;per&nbsp;60&nbsp;seconds.<br>
+*&nbsp;Only&nbsp;10&nbsp;``GET``&nbsp;requests&nbsp;to&nbsp;the&nbsp;``/v2/account/keys``&nbsp;endpoint&nbsp;to&nbsp;list&nbsp;SSH&nbsp;keys&nbsp;can&nbsp;be&nbsp;made<br>
+per&nbsp;60&nbsp;seconds.<br>
+&nbsp;<br>
+Sample&nbsp;Rate&nbsp;Limit&nbsp;Headers<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RateLimit-Limit:&nbsp;1200<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RateLimit-Remaining:&nbsp;1193<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RateLimit-Reset:&nbsp;1402425459<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.<br>
+&nbsp;<br>
+Sample&nbsp;Rate&nbsp;Exceeded&nbsp;Response<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;429&nbsp;Too&nbsp;Many&nbsp;Requests<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id:&nbsp;"too_many_requests",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message:&nbsp;"API&nbsp;Rate&nbsp;limit&nbsp;exceeded."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;<br>
+Curl&nbsp;Examples<br>
+-------------<br>
+&nbsp;<br>
+Throughout&nbsp;this&nbsp;document,&nbsp;some&nbsp;example&nbsp;API&nbsp;requests&nbsp;will&nbsp;be&nbsp;given&nbsp;using&nbsp;the<br>
+``curl``&nbsp;command.&nbsp;This&nbsp;will&nbsp;allow&nbsp;us&nbsp;to&nbsp;demonstrate&nbsp;the&nbsp;various&nbsp;endpoints&nbsp;in&nbsp;a<br>
+simple,&nbsp;textual&nbsp;format.<br>
+&nbsp;<br>
+&nbsp;&nbsp;These&nbsp;examples&nbsp;assume&nbsp;that&nbsp;you&nbsp;are&nbsp;using&nbsp;a&nbsp;Linux&nbsp;or&nbsp;macOS&nbsp;command&nbsp;line.&nbsp;To&nbsp;run<br>
+these&nbsp;commands&nbsp;on&nbsp;a&nbsp;Windows&nbsp;machine,&nbsp;you&nbsp;can&nbsp;either&nbsp;use&nbsp;cmd.exe,&nbsp;PowerShell,&nbsp;or&nbsp;WSL:<br>
+&nbsp;<br>
+&nbsp;<br>
+*<br>
+&nbsp;&nbsp;For&nbsp;cmd.exe,&nbsp;use&nbsp;the&nbsp;``set&nbsp;VAR=VALUE``&nbsp;`syntax<br>
+&lt;<a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/set_1&gt;`_">https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/set_1&gt;`_</a><br>
+&nbsp;&nbsp;to&nbsp;define&nbsp;environment&nbsp;variables,&nbsp;call&nbsp;them&nbsp;with&nbsp;``%VAR%``\&nbsp;,&nbsp;then&nbsp;replace&nbsp;all&nbsp;backslashes&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;``\``\&nbsp;)&nbsp;in&nbsp;the&nbsp;examples&nbsp;with&nbsp;carets&nbsp;(\&nbsp;``^``\&nbsp;).<br>
+&nbsp;<br>
+*<br>
+&nbsp;&nbsp;For&nbsp;PowerShell,&nbsp;use&nbsp;the&nbsp;``$Env:VAR&nbsp;=&nbsp;"VALUE"``&nbsp;`syntax<br>
+&lt;<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.2&gt;`_">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.2&gt;`_</a><br>
+&nbsp;&nbsp;to&nbsp;define&nbsp;environment&nbsp;variables,&nbsp;call&nbsp;them&nbsp;with&nbsp;``$Env:VAR``\&nbsp;,&nbsp;then&nbsp;replace&nbsp;``curl``&nbsp;with<br>
+``curl.exe``&nbsp;and&nbsp;all&nbsp;backslashes&nbsp;(\&nbsp;``\``\&nbsp;)&nbsp;in&nbsp;the&nbsp;examples&nbsp;with&nbsp;backticks&nbsp;(\&nbsp;```&nbsp;``\&nbsp;).<br>
+&nbsp;<br>
+*<br>
+&nbsp;&nbsp;WSL&nbsp;is&nbsp;a&nbsp;compatibility&nbsp;layer&nbsp;that&nbsp;allows&nbsp;you&nbsp;to&nbsp;emulate&nbsp;a&nbsp;Linux&nbsp;terminal&nbsp;on&nbsp;a&nbsp;Windows<br>
+machine.<br>
+&nbsp;&nbsp;Install&nbsp;WSL&nbsp;with&nbsp;our&nbsp;`community&nbsp;tutorial<br>
+&lt;<a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-windows-subsystem-for-linux-2-on-microsoft-windows-10&gt;`_">https://www.digitalocean.com/community/tutorials/how-to-install-the-windows-subsystem-for-linux-2-on-microsoft-windows-10&gt;`_</a>&nbsp;&nbsp;&nbsp;&nbsp;,<br>
+&nbsp;&nbsp;then&nbsp;follow&nbsp;this&nbsp;API&nbsp;documentation&nbsp;normally.<br>
+&nbsp;<br>
+The&nbsp;names&nbsp;of&nbsp;account-specific&nbsp;references&nbsp;(like&nbsp;Droplet&nbsp;IDs,&nbsp;for&nbsp;instance)<br>
+will&nbsp;be&nbsp;represented&nbsp;by&nbsp;variables.&nbsp;For&nbsp;instance,&nbsp;a&nbsp;Droplet&nbsp;ID&nbsp;may&nbsp;be<br>
+represented&nbsp;by&nbsp;a&nbsp;variable&nbsp;called&nbsp;``$DROPLET_ID``.&nbsp;You&nbsp;can&nbsp;set&nbsp;the&nbsp;associated<br>
+variables&nbsp;in&nbsp;your&nbsp;environment&nbsp;if&nbsp;you&nbsp;wish&nbsp;to&nbsp;use&nbsp;the&nbsp;examples&nbsp;without<br>
+modification.<br>
+&nbsp;<br>
+The&nbsp;first&nbsp;variable&nbsp;that&nbsp;you&nbsp;should&nbsp;set&nbsp;to&nbsp;get&nbsp;started&nbsp;is&nbsp;your&nbsp;OAuth<br>
+authorization&nbsp;token.&nbsp;The&nbsp;next&nbsp;section&nbsp;will&nbsp;go&nbsp;over&nbsp;the&nbsp;details&nbsp;of&nbsp;this,&nbsp;but<br>
+you&nbsp;can&nbsp;set&nbsp;an&nbsp;environmental&nbsp;variable&nbsp;for&nbsp;it&nbsp;now.<br>
+&nbsp;<br>
+Generate&nbsp;a&nbsp;token&nbsp;by&nbsp;going&nbsp;to&nbsp;the&nbsp;`Apps&nbsp;&amp;&nbsp;API<br>
+&lt;<a href="https://cloud.digitalocean.com/settings/applications&gt;`_">https://cloud.digitalocean.com/settings/applications&gt;`_</a><br>
+section&nbsp;of&nbsp;the&nbsp;DigitalOcean&nbsp;control&nbsp;panel.&nbsp;Use&nbsp;an&nbsp;existing&nbsp;token&nbsp;if&nbsp;you&nbsp;have<br>
+saved&nbsp;one,&nbsp;or&nbsp;generate&nbsp;a&nbsp;new&nbsp;token&nbsp;with&nbsp;the&nbsp;"Generate&nbsp;new&nbsp;token"&nbsp;button.<br>
+Copy&nbsp;the&nbsp;generated&nbsp;token&nbsp;and&nbsp;use&nbsp;it&nbsp;to&nbsp;set&nbsp;and&nbsp;export&nbsp;the&nbsp;TOKEN&nbsp;variable&nbsp;in<br>
+your&nbsp;environment&nbsp;as&nbsp;the&nbsp;example&nbsp;shows.<br>
+&nbsp;<br>
+You&nbsp;may&nbsp;also&nbsp;wish&nbsp;to&nbsp;set&nbsp;some&nbsp;other&nbsp;variables&nbsp;now&nbsp;or&nbsp;as&nbsp;you&nbsp;go&nbsp;along.&nbsp;For<br>
+example,&nbsp;you&nbsp;may&nbsp;wish&nbsp;to&nbsp;set&nbsp;the&nbsp;``DROPLET_ID``&nbsp;variable&nbsp;to&nbsp;one&nbsp;of&nbsp;your<br>
+Droplet&nbsp;IDs&nbsp;since&nbsp;this&nbsp;will&nbsp;be&nbsp;used&nbsp;frequently&nbsp;in&nbsp;the&nbsp;API.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;are&nbsp;following&nbsp;along,&nbsp;make&nbsp;sure&nbsp;you&nbsp;use&nbsp;a&nbsp;Droplet&nbsp;ID&nbsp;that&nbsp;you&nbsp;control<br>
+so&nbsp;that&nbsp;your&nbsp;commands&nbsp;will&nbsp;execute&nbsp;correctly.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;need&nbsp;access&nbsp;to&nbsp;the&nbsp;headers&nbsp;of&nbsp;a&nbsp;response&nbsp;through&nbsp;``curl``\&nbsp;,&nbsp;you&nbsp;can&nbsp;pass<br>
+the&nbsp;``-i``&nbsp;flag&nbsp;to&nbsp;display&nbsp;the&nbsp;header&nbsp;information&nbsp;along&nbsp;with&nbsp;the&nbsp;body.&nbsp;If&nbsp;you<br>
+are&nbsp;only&nbsp;interested&nbsp;in&nbsp;the&nbsp;header,&nbsp;you&nbsp;can&nbsp;instead&nbsp;pass&nbsp;the&nbsp;``-I``&nbsp;flag,&nbsp;which<br>
+will&nbsp;exclude&nbsp;the&nbsp;response&nbsp;body&nbsp;entirely.<br>
+&nbsp;<br>
+Set&nbsp;and&nbsp;Export&nbsp;your&nbsp;OAuth&nbsp;Token<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;export&nbsp;DIGITALOCEAN_TOKEN=your_token_here<br>
+&nbsp;<br>
+Set&nbsp;and&nbsp;Export&nbsp;a&nbsp;Variable<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;export&nbsp;DROPLET_ID=1111111<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+&nbsp;<br>
+There&nbsp;are&nbsp;two&nbsp;different&nbsp;ways&nbsp;to&nbsp;pass&nbsp;parameters&nbsp;in&nbsp;a&nbsp;request&nbsp;with&nbsp;the&nbsp;API.<br>
+&nbsp;<br>
+When&nbsp;passing&nbsp;parameters&nbsp;to&nbsp;create&nbsp;or&nbsp;update&nbsp;an&nbsp;<a href="builtins.html#object">object</a>,&nbsp;parameters&nbsp;should&nbsp;be<br>
+passed&nbsp;as&nbsp;a&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>&nbsp;containing&nbsp;the&nbsp;appropriate&nbsp;attribute&nbsp;names&nbsp;and<br>
+values&nbsp;as&nbsp;key-value&nbsp;pairs.&nbsp;When&nbsp;you&nbsp;use&nbsp;this&nbsp;format,&nbsp;you&nbsp;should&nbsp;specify&nbsp;that<br>
+you&nbsp;are&nbsp;sending&nbsp;a&nbsp;JSON&nbsp;<a href="builtins.html#object">object</a>&nbsp;in&nbsp;the&nbsp;header.&nbsp;This&nbsp;is&nbsp;done&nbsp;by&nbsp;setting&nbsp;the<br>
+``Content-Type``&nbsp;header&nbsp;to&nbsp;``application/json``.&nbsp;This&nbsp;ensures&nbsp;that&nbsp;your&nbsp;request<br>
+is&nbsp;interpreted&nbsp;correctly.<br>
+&nbsp;<br>
+When&nbsp;passing&nbsp;parameters&nbsp;to&nbsp;filter&nbsp;a&nbsp;response&nbsp;on&nbsp;GET&nbsp;requests,&nbsp;parameters&nbsp;can<br>
+be&nbsp;passed&nbsp;using&nbsp;standard&nbsp;query&nbsp;attributes.&nbsp;In&nbsp;this&nbsp;case,&nbsp;the&nbsp;parameters<br>
+would&nbsp;be&nbsp;embedded&nbsp;into&nbsp;the&nbsp;URI&nbsp;itself&nbsp;by&nbsp;appending&nbsp;a&nbsp;``?``&nbsp;to&nbsp;the&nbsp;end&nbsp;of&nbsp;the<br>
+URI&nbsp;and&nbsp;then&nbsp;setting&nbsp;each&nbsp;attribute&nbsp;with&nbsp;an&nbsp;equal&nbsp;sign.&nbsp;Attributes&nbsp;can&nbsp;be<br>
+separated&nbsp;with&nbsp;a&nbsp;``&amp;``.&nbsp;Tools&nbsp;like&nbsp;``curl``&nbsp;can&nbsp;create&nbsp;the&nbsp;appropriate&nbsp;URI&nbsp;when<br>
+given&nbsp;parameters&nbsp;and&nbsp;values;&nbsp;this&nbsp;can&nbsp;also&nbsp;be&nbsp;done&nbsp;using&nbsp;the&nbsp;``-F``&nbsp;flag&nbsp;and<br>
+then&nbsp;passing&nbsp;the&nbsp;key&nbsp;and&nbsp;value&nbsp;as&nbsp;an&nbsp;argument.&nbsp;The&nbsp;argument&nbsp;should&nbsp;take&nbsp;the<br>
+form&nbsp;of&nbsp;a&nbsp;quoted&nbsp;string&nbsp;with&nbsp;the&nbsp;attribute&nbsp;being&nbsp;set&nbsp;to&nbsp;a&nbsp;value&nbsp;with&nbsp;an<br>
+equal&nbsp;sign.<br>
+&nbsp;<br>
+Pass&nbsp;Parameters&nbsp;as&nbsp;a&nbsp;JSON&nbsp;Object<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;curl&nbsp;-H&nbsp;"Authorization:&nbsp;Bearer&nbsp;$DIGITALOCEAN_TOKEN"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-H&nbsp;"Content-Type:&nbsp;application/json"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-d&nbsp;'{"name":&nbsp;"example.com",&nbsp;"ip_address":&nbsp;"127.0.0.1"}'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-X&nbsp;POST&nbsp;"<a href="https://api.digitalocean.com/v2/domains">https://api.digitalocean.com/v2/domains</a>"<br>
+&nbsp;<br>
+Pass&nbsp;Filter&nbsp;Parameters&nbsp;as&nbsp;a&nbsp;Query&nbsp;String<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+&nbsp;<br>
+..&nbsp;code-block::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;curl&nbsp;-H&nbsp;"Authorization:&nbsp;Bearer&nbsp;$DIGITALOCEAN_TOKEN"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-X&nbsp;GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<a href="https://api.digitalocean.com/v2/images?private=true">https://api.digitalocean.com/v2/images?private=true</a>"<br>
+&nbsp;<br>
+Cross&nbsp;Origin&nbsp;Resource&nbsp;Sharing<br>
+-----------------------------<br>
+&nbsp;<br>
+In&nbsp;order&nbsp;to&nbsp;make&nbsp;requests&nbsp;to&nbsp;the&nbsp;API&nbsp;from&nbsp;other&nbsp;domains,&nbsp;the&nbsp;API&nbsp;implements<br>
+Cross&nbsp;Origin&nbsp;Resource&nbsp;Sharing&nbsp;(CORS)&nbsp;support.<br>
+&nbsp;<br>
+CORS&nbsp;support&nbsp;is&nbsp;generally&nbsp;used&nbsp;to&nbsp;create&nbsp;AJAX&nbsp;requests&nbsp;outside&nbsp;of&nbsp;the&nbsp;domain<br>
+that&nbsp;the&nbsp;request&nbsp;originated&nbsp;from.&nbsp;This&nbsp;is&nbsp;necessary&nbsp;to&nbsp;implement&nbsp;projects<br>
+like&nbsp;control&nbsp;panels&nbsp;utilizing&nbsp;the&nbsp;API.&nbsp;This&nbsp;tells&nbsp;the&nbsp;browser&nbsp;that&nbsp;it&nbsp;can<br>
+send&nbsp;requests&nbsp;to&nbsp;an&nbsp;outside&nbsp;domain.<br>
+&nbsp;<br>
+The&nbsp;procedure&nbsp;that&nbsp;the&nbsp;browser&nbsp;initiates&nbsp;in&nbsp;order&nbsp;to&nbsp;perform&nbsp;these&nbsp;actions<br>
+(other&nbsp;than&nbsp;GET&nbsp;requests)&nbsp;begins&nbsp;by&nbsp;sending&nbsp;a&nbsp;"preflight"&nbsp;request.&nbsp;This&nbsp;sets<br>
+the&nbsp;``Origin``&nbsp;header&nbsp;and&nbsp;uses&nbsp;the&nbsp;``OPTIONS``&nbsp;method.&nbsp;The&nbsp;server&nbsp;will&nbsp;reply<br>
+back&nbsp;with&nbsp;the&nbsp;methods&nbsp;it&nbsp;allows&nbsp;and&nbsp;some&nbsp;of&nbsp;the&nbsp;limits&nbsp;it&nbsp;imposes.&nbsp;The<br>
+client&nbsp;then&nbsp;sends&nbsp;the&nbsp;actual&nbsp;request&nbsp;if&nbsp;it&nbsp;falls&nbsp;within&nbsp;the&nbsp;allowed<br>
+constraints.<br>
+&nbsp;<br>
+This&nbsp;process&nbsp;is&nbsp;usually&nbsp;done&nbsp;in&nbsp;the&nbsp;background&nbsp;by&nbsp;the&nbsp;browser,&nbsp;but&nbsp;you&nbsp;can<br>
+use&nbsp;curl&nbsp;to&nbsp;emulate&nbsp;this&nbsp;process&nbsp;using&nbsp;the&nbsp;example&nbsp;provided.&nbsp;The&nbsp;headers<br>
+that&nbsp;will&nbsp;be&nbsp;set&nbsp;to&nbsp;show&nbsp;the&nbsp;constraints&nbsp;are:<br>
+&nbsp;<br>
+&nbsp;<br>
+*&nbsp;**Access-Control-Allow-Origin**\&nbsp;:&nbsp;This&nbsp;is&nbsp;the&nbsp;domain&nbsp;that&nbsp;is&nbsp;sent&nbsp;by&nbsp;the&nbsp;client&nbsp;or&nbsp;browser<br>
+as&nbsp;the&nbsp;origin&nbsp;of&nbsp;the&nbsp;request.&nbsp;It&nbsp;is&nbsp;set&nbsp;through&nbsp;an&nbsp;``Origin``&nbsp;header.<br>
+*&nbsp;**Access-Control-Allow-Methods**\&nbsp;:&nbsp;This&nbsp;specifies&nbsp;the&nbsp;allowed&nbsp;options&nbsp;for&nbsp;requests&nbsp;from&nbsp;that<br>
+domain.&nbsp;This&nbsp;will&nbsp;generally&nbsp;be&nbsp;all&nbsp;available&nbsp;methods.<br>
+*&nbsp;**Access-Control-Expose-Headers**\&nbsp;:&nbsp;This&nbsp;will&nbsp;contain&nbsp;the&nbsp;headers&nbsp;that&nbsp;will&nbsp;be&nbsp;available&nbsp;to<br>
+requests&nbsp;from&nbsp;the&nbsp;origin&nbsp;domain.<br>
+*&nbsp;**Access-Control-Max-Age**\&nbsp;:&nbsp;This&nbsp;is&nbsp;the&nbsp;length&nbsp;of&nbsp;time&nbsp;that&nbsp;the&nbsp;access&nbsp;is&nbsp;considered&nbsp;valid.<br>
+After&nbsp;this&nbsp;expires,&nbsp;a&nbsp;new&nbsp;preflight&nbsp;should&nbsp;be&nbsp;sent.<br>
+*&nbsp;**Access-Control-Allow-Credentials**\&nbsp;:&nbsp;This&nbsp;will&nbsp;be&nbsp;set&nbsp;to&nbsp;``true``.&nbsp;It&nbsp;basically&nbsp;allows&nbsp;you<br>
+to&nbsp;send&nbsp;your&nbsp;OAuth&nbsp;token&nbsp;for&nbsp;authentication.<br>
+&nbsp;<br>
+You&nbsp;should&nbsp;not&nbsp;need&nbsp;to&nbsp;be&nbsp;concerned&nbsp;with&nbsp;the&nbsp;details&nbsp;of&nbsp;these&nbsp;headers,<br>
+because&nbsp;the&nbsp;browser&nbsp;will&nbsp;typically&nbsp;do&nbsp;all&nbsp;of&nbsp;the&nbsp;work&nbsp;for&nbsp;you.<br>
+&nbsp;<br>
+:ivar&nbsp;one_clicks:&nbsp;OneClicksOperations&nbsp;operations<br>
+:vartype&nbsp;one_clicks:&nbsp;digitalocean.operations.OneClicksOperations<br>
+:ivar&nbsp;account:&nbsp;AccountOperations&nbsp;operations<br>
+:vartype&nbsp;account:&nbsp;digitalocean.operations.AccountOperations<br>
+:ivar&nbsp;ssh_keys:&nbsp;SshKeysOperations&nbsp;operations<br>
+:vartype&nbsp;ssh_keys:&nbsp;digitalocean.operations.SshKeysOperations<br>
+:ivar&nbsp;actions:&nbsp;ActionsOperations&nbsp;operations<br>
+:vartype&nbsp;actions:&nbsp;digitalocean.operations.ActionsOperations<br>
+:ivar&nbsp;apps:&nbsp;AppsOperations&nbsp;operations<br>
+:vartype&nbsp;apps:&nbsp;digitalocean.operations.AppsOperations<br>
+:ivar&nbsp;cdn:&nbsp;CdnOperations&nbsp;operations<br>
+:vartype&nbsp;cdn:&nbsp;digitalocean.operations.CdnOperations<br>
+:ivar&nbsp;certificates:&nbsp;CertificatesOperations&nbsp;operations<br>
+:vartype&nbsp;certificates:&nbsp;digitalocean.operations.CertificatesOperations<br>
+:ivar&nbsp;balance:&nbsp;BalanceOperations&nbsp;operations<br>
+:vartype&nbsp;balance:&nbsp;digitalocean.operations.BalanceOperations<br>
+:ivar&nbsp;billing_history:&nbsp;BillingHistoryOperations&nbsp;operations<br>
+:vartype&nbsp;billing_history:&nbsp;digitalocean.operations.BillingHistoryOperations<br>
+:ivar&nbsp;invoices:&nbsp;InvoicesOperations&nbsp;operations<br>
+:vartype&nbsp;invoices:&nbsp;digitalocean.operations.InvoicesOperations<br>
+:ivar&nbsp;databases:&nbsp;DatabasesOperations&nbsp;operations<br>
+:vartype&nbsp;databases:&nbsp;digitalocean.operations.DatabasesOperations<br>
+:ivar&nbsp;domains:&nbsp;DomainsOperations&nbsp;operations<br>
+:vartype&nbsp;domains:&nbsp;digitalocean.operations.DomainsOperations<br>
+:ivar&nbsp;droplets:&nbsp;DropletsOperations&nbsp;operations<br>
+:vartype&nbsp;droplets:&nbsp;digitalocean.operations.DropletsOperations<br>
+:ivar&nbsp;droplet_actions:&nbsp;DropletActionsOperations&nbsp;operations<br>
+:vartype&nbsp;droplet_actions:&nbsp;digitalocean.operations.DropletActionsOperations<br>
+:ivar&nbsp;firewalls:&nbsp;FirewallsOperations&nbsp;operations<br>
+:vartype&nbsp;firewalls:&nbsp;digitalocean.operations.FirewallsOperations<br>
+:ivar&nbsp;images:&nbsp;ImagesOperations&nbsp;operations<br>
+:vartype&nbsp;images:&nbsp;digitalocean.operations.ImagesOperations<br>
+:ivar&nbsp;image_actions:&nbsp;ImageActionsOperations&nbsp;operations<br>
+:vartype&nbsp;image_actions:&nbsp;digitalocean.operations.ImageActionsOperations<br>
+:ivar&nbsp;kubernetes:&nbsp;KubernetesOperations&nbsp;operations<br>
+:vartype&nbsp;kubernetes:&nbsp;digitalocean.operations.KubernetesOperations<br>
+:ivar&nbsp;load_balancers:&nbsp;LoadBalancersOperations&nbsp;operations<br>
+:vartype&nbsp;load_balancers:&nbsp;digitalocean.operations.LoadBalancersOperations<br>
+:ivar&nbsp;monitoring:&nbsp;MonitoringOperations&nbsp;operations<br>
+:vartype&nbsp;monitoring:&nbsp;digitalocean.operations.MonitoringOperations<br>
+:ivar&nbsp;projects:&nbsp;ProjectsOperations&nbsp;operations<br>
+:vartype&nbsp;projects:&nbsp;digitalocean.operations.ProjectsOperations<br>
+:ivar&nbsp;regions:&nbsp;RegionsOperations&nbsp;operations<br>
+:vartype&nbsp;regions:&nbsp;digitalocean.operations.RegionsOperations<br>
+:ivar&nbsp;registry:&nbsp;RegistryOperations&nbsp;operations<br>
+:vartype&nbsp;registry:&nbsp;digitalocean.operations.RegistryOperations<br>
+:ivar&nbsp;reserved_ips:&nbsp;ReservedIPsOperations&nbsp;operations<br>
+:vartype&nbsp;reserved_ips:&nbsp;digitalocean.operations.ReservedIPsOperations<br>
+:ivar&nbsp;reserved_ips_actions:&nbsp;ReservedIPsActionsOperations&nbsp;operations<br>
+:vartype&nbsp;reserved_ips_actions:&nbsp;digitalocean.operations.ReservedIPsActionsOperations<br>
+:ivar&nbsp;sizes:&nbsp;SizesOperations&nbsp;operations<br>
+:vartype&nbsp;sizes:&nbsp;digitalocean.operations.SizesOperations<br>
+:ivar&nbsp;snapshots:&nbsp;SnapshotsOperations&nbsp;operations<br>
+:vartype&nbsp;snapshots:&nbsp;digitalocean.operations.SnapshotsOperations<br>
+:ivar&nbsp;tags:&nbsp;TagsOperations&nbsp;operations<br>
+:vartype&nbsp;tags:&nbsp;digitalocean.operations.TagsOperations<br>
+:ivar&nbsp;volumes:&nbsp;VolumesOperations&nbsp;operations<br>
+:vartype&nbsp;volumes:&nbsp;digitalocean.operations.VolumesOperations<br>
+:ivar&nbsp;volume_actions:&nbsp;VolumeActionsOperations&nbsp;operations<br>
+:vartype&nbsp;volume_actions:&nbsp;digitalocean.operations.VolumeActionsOperations<br>
+:ivar&nbsp;volume_snapshots:&nbsp;VolumeSnapshotsOperations&nbsp;operations<br>
+:vartype&nbsp;volume_snapshots:&nbsp;digitalocean.operations.VolumeSnapshotsOperations<br>
+:ivar&nbsp;vpcs:&nbsp;VpcsOperations&nbsp;operations<br>
+:vartype&nbsp;vpcs:&nbsp;digitalocean.operations.VpcsOperations<br>
+:param&nbsp;credential:&nbsp;Credential&nbsp;needed&nbsp;for&nbsp;the&nbsp;client&nbsp;to&nbsp;connect&nbsp;to&nbsp;Azure.&nbsp;Required.<br>
+:type&nbsp;credential:&nbsp;~azure.core.credentials.TokenCredential<br>
+:keyword&nbsp;endpoint:&nbsp;Service&nbsp;URL.&nbsp;Default&nbsp;value&nbsp;is&nbsp;"<a href="https://api.digitalocean.com">https://api.digitalocean.com</a>".<br>
+:paramtype&nbsp;endpoint:&nbsp;str<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GeneratedClient-__enter__"><strong>__enter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneratedClient-__exit__"><strong>__exit__</strong></a>(self, *exc_details)</dt></dl>
+
+<dl><dt><a name="GeneratedClient-__init__"><strong>__init__</strong></a>(self, credential: 'TokenCredential', *, endpoint: str = 'https://api.digitalocean.com', **kwargs: Any) -&gt; None</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="GeneratedClient-close"><strong>close</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneratedClient-send_request"><strong>send_request</strong></a>(self, request: azure.core.rest._rest_py3.HttpRequest, **kwargs: Any) -&gt; azure.core.rest._rest_py3.HttpResponse</dt><dd><tt>Runs&nbsp;the&nbsp;network&nbsp;request&nbsp;through&nbsp;the&nbsp;client's&nbsp;chained&nbsp;policies.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;from&nbsp;azure.core.rest&nbsp;import&nbsp;HttpRequest<br>
+&gt;&gt;&gt;&nbsp;request&nbsp;=&nbsp;HttpRequest("GET",&nbsp;"<a href="https://www.example.org/">https://www.example.org/</a>")<br>
+&lt;HttpRequest&nbsp;[GET],&nbsp;url:&nbsp;'<a href="https://www.example.org/">https://www.example.org/</a>'&gt;<br>
+&gt;&gt;&gt;&nbsp;response&nbsp;=&nbsp;client.<a href="#GeneratedClient-send_request">send_request</a>(request)<br>
+&lt;HttpResponse:&nbsp;200&nbsp;OK&gt;<br>
+&nbsp;<br>
+For&nbsp;more&nbsp;information&nbsp;on&nbsp;this&nbsp;code&nbsp;flow,&nbsp;see&nbsp;<a href="https://aka.ms/azsdk/dpcodegen/python/send_request">https://aka.ms/azsdk/dpcodegen/python/send_request</a><br>
+&nbsp;<br>
+:param&nbsp;request:&nbsp;The&nbsp;network&nbsp;request&nbsp;you&nbsp;want&nbsp;to&nbsp;make.&nbsp;Required.<br>
+:type&nbsp;request:&nbsp;~azure.core.rest.HttpRequest<br>
+:keyword&nbsp;bool&nbsp;stream:&nbsp;Whether&nbsp;the&nbsp;response&nbsp;payload&nbsp;will&nbsp;be&nbsp;streamed.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+:return:&nbsp;The&nbsp;response&nbsp;of&nbsp;your&nbsp;network&nbsp;call.&nbsp;Does&nbsp;not&nbsp;do&nbsp;error&nbsp;handling&nbsp;on&nbsp;your&nbsp;response.<br>
+:rtype:&nbsp;~azure.core.rest.HttpResponse</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['GeneratedClient', 'Client']</td></tr></table>
+</body></html>

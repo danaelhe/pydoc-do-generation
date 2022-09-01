@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module digitalocean._patch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="digitalocean.html"><font color="#ffffff">digitalocean</font></a>._patch</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/_patch.py">/Users/danaelhertani/dev/digitalocean-client-python/src/digitalocean/_patch.py</a></font></td></tr></table>
+    <p><tt>Customize&nbsp;generated&nbsp;code&nbsp;here.<br>
+&nbsp;<br>
+Follow&nbsp;our&nbsp;quickstart&nbsp;for&nbsp;examples:&nbsp;<a href="https://aka.ms/azsdk/python/dpcodegen/python/customize">https://aka.ms/azsdk/python/dpcodegen/python/customize</a></tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="digitalocean._version.html">digitalocean._version</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="digitalocean._patch.html#Client">Client</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Client">class <strong>Client</strong></a>(<a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Client">Client</a>(token:&nbsp;str,&nbsp;*,&nbsp;timeout:&nbsp;int&nbsp;=&nbsp;120,&nbsp;**kwargs)<br>
+&nbsp;<br>
+The&nbsp;official&nbsp;DigitalOceanClient<br>
+&nbsp;<br>
+:param&nbsp;token:&nbsp;A&nbsp;valid&nbsp;API&nbsp;token.<br>
+:type&nbsp;token:&nbsp;str<br>
+:keyword&nbsp;endpoint:&nbsp;Service&nbsp;URL.&nbsp;Default&nbsp;value&nbsp;is&nbsp;"<a href="https://api.digitalocean.com">https://api.digitalocean.com</a>".<br>
+:paramtype&nbsp;endpoint:&nbsp;str<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="digitalocean._patch.html#Client">Client</a></dd>
+<dd><a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Client-__init__"><strong>__init__</strong></a>(self, token: str, *, timeout: int = 120, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>:<br>
+<dl><dt><a name="Client-__enter__"><strong>__enter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Client-__exit__"><strong>__exit__</strong></a>(self, *exc_details)</dt></dl>
+
+<dl><dt><a name="Client-close"><strong>close</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Client-send_request"><strong>send_request</strong></a>(self, request: azure.core.rest._rest_py3.HttpRequest, **kwargs: Any) -&gt; azure.core.rest._rest_py3.HttpResponse</dt><dd><tt>Runs&nbsp;the&nbsp;network&nbsp;request&nbsp;through&nbsp;the&nbsp;client's&nbsp;chained&nbsp;policies.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;from&nbsp;azure.core.rest&nbsp;import&nbsp;HttpRequest<br>
+&gt;&gt;&gt;&nbsp;request&nbsp;=&nbsp;HttpRequest("GET",&nbsp;"<a href="https://www.example.org/">https://www.example.org/</a>")<br>
+&lt;HttpRequest&nbsp;[GET],&nbsp;url:&nbsp;'<a href="https://www.example.org/">https://www.example.org/</a>'&gt;<br>
+&gt;&gt;&gt;&nbsp;response&nbsp;=&nbsp;client.<a href="#Client-send_request">send_request</a>(request)<br>
+&lt;HttpResponse:&nbsp;200&nbsp;OK&gt;<br>
+&nbsp;<br>
+For&nbsp;more&nbsp;information&nbsp;on&nbsp;this&nbsp;code&nbsp;flow,&nbsp;see&nbsp;<a href="https://aka.ms/azsdk/dpcodegen/python/send_request">https://aka.ms/azsdk/dpcodegen/python/send_request</a><br>
+&nbsp;<br>
+:param&nbsp;request:&nbsp;The&nbsp;network&nbsp;request&nbsp;you&nbsp;want&nbsp;to&nbsp;make.&nbsp;Required.<br>
+:type&nbsp;request:&nbsp;~azure.core.rest.HttpRequest<br>
+:keyword&nbsp;bool&nbsp;stream:&nbsp;Whether&nbsp;the&nbsp;response&nbsp;payload&nbsp;will&nbsp;be&nbsp;streamed.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+:return:&nbsp;The&nbsp;response&nbsp;of&nbsp;your&nbsp;network&nbsp;call.&nbsp;Does&nbsp;not&nbsp;do&nbsp;error&nbsp;handling&nbsp;on&nbsp;your&nbsp;response.<br>
+:rtype:&nbsp;~azure.core.rest.HttpResponse</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="digitalocean._client.html#GeneratedClient">digitalocean._client.GeneratedClient</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['Client']</td></tr></table>
+</body></html>
